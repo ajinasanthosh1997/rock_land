@@ -1,0 +1,136 @@
+/* Apply Inter font to the entire page */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F5F6EF;
+    color: #003F2E;
+}
+/* Style for navigation links */
+.navbar-nav .nav-link {
+    font-size: 1.2rem; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    color: #003F2E;
+    margin-right: 2rem; /* Add spacing between links */
+}
+
+.nav-img{
+    width: 10.5rem;
+}
+
+/* Header container */
+.header-container {
+    position: relative;
+    overflow: hidden; /* Prevent overflow issues */
+}
+
+/* Style the vector image */
+.header-vector {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42rem;
+    height: 45rem;
+    z-index: -1; /* Send it behind other content */
+    opacity: 0.8; /* Adjust transparency */
+}
+
+.spotlight {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.spotlight-vector {
+    position: absolute;
+    left: 0;
+  
+    width: 50rem;
+    height: 80rem;
+    z-index: -1; /* Send it behind other content */
+    opacity: 0.8; /* Adjust transparency */
+}
+
+.spotlight .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+
+
+
+/* Spotlight Section */
+.spotlight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* Spotlight Section */
+.spotlight-title {
+    font-size: 5rem; /* Increase size */
+    font-weight: 600; /* Make it bolder */
+    line-height: 1.2;
+    margin:0rem 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .spotlight-title {
+        font-size: 3rem; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .spotlight-title {
+        font-size: 2rem; /* Adjust for mobile */
+        
+    }
+}
+
+
+
+
+/* Text */
+.spotlight-text {
+    font-size: 1.4rem;
+    padding:1rem 7rem;
+    letter-spacing: -0.5px; /* Adjust this value for tighter spacing */
+}
+
+
+/* Button */
+.spotlight-btn {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: #BCFF83;
+    border: none;
+    transition: 0.3s;
+    color:#003F2E ;
+    font-weight: 600;
+}
+
+.spotlight-btn:hover {
+    background-color: #003F2E;
+    color: #BCFF83;
+}
+
+/* Video Section */
+.spotlight-video {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.spotlight-video video {
+    width: 100%;
+    max-width: 1500px; /* Increase max-width */
+    height: 600px; /* Set a fixed height */
+    border-radius: 2rem;
+    object-fit: cover; /* Ensures the video maintains aspect ratio */
+}
+
