@@ -4,113 +4,121 @@ body {
     background-color: #F5F6EF;
     color: #003F2E;
 }
+
 /* Style for navigation links */
 .navbar-nav .nav-link {
-    font-size: 1.2rem; /* Increase font size */
-    font-weight: bold; /* Make text bold */
+    font-size: 1.2rem;
+    font-weight: bold;
     color: #003F2E;
-    margin-right: 2rem; /* Add spacing between links */
+    margin-right: 2rem;
 }
 
-.nav-img{
+.nav-img {
     width: 10.5rem;
 }
 
 /* Header container */
 .header-container {
     position: relative;
-    overflow: hidden; /* Prevent overflow issues */
+    overflow: hidden;
 }
 
-/* Style the vector image */
+/* Style the header vector image */
 .header-vector {
     position: absolute;
     top: 0;
     right: 0;
-    width: 42rem;
-    height: 45rem;
-    z-index: -1; /* Send it behind other content */
-    opacity: 0.8; /* Adjust transparency */
+    width: 35rem;
+    height: auto;
+    z-index: -1;
+    opacity: 0.8;
 }
 
+/* Spotlight Section */
 .spotlight {
-    padding: 50px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     position: relative;
+    text-align: center;
+    padding: 50px 0;
 }
 
+/* Style the spotlight vector */
 .spotlight-vector {
     position: absolute;
     left: 0;
-  
-    width: 50rem;
-    height: 80rem;
-    z-index: -1; /* Send it behind other content */
-    opacity: 0.8; /* Adjust transparency */
+    top:-24rem;
+    width: 45%;
+    height: auto;
+    z-index: -1;
+    opacity: 0.8;
 }
 
-.spotlight .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap; /* Ensures responsiveness */
-}
-
-
-
-
-/* Spotlight Section */
-.spotlight {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-/* Spotlight Section */
+/* Spotlight title */
 .spotlight-title {
-    font-size: 5rem; /* Increase size */
-    font-weight: 600; /* Make it bolder */
+    font-size: 4.5rem;
+    font-weight: 600;
     line-height: 1.2;
-    margin:0rem 2rem;
+    margin: 0rem 2rem;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .spotlight-title {
-        font-size: 3rem; /* Adjust for smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .spotlight-title {
-        font-size: 2rem; /* Adjust for mobile */
-        
-    }
-}
-
-
-
-
-/* Text */
 .spotlight-text {
-    font-size: 1.4rem;
-    padding:1rem 7rem;
-    letter-spacing: -0.5px; /* Adjust this value for tighter spacing */
+    font-size: 1.2rem;
+    padding: 1rem 0rem;
 }
 
+/* Responsive text adjustments */
+@media (max-width: 992px) {
+    .spotlight-vector {
+        width: 40%;
+    }
+
+    .spotlight-title {
+        font-size: 4rem;
+    }
+
+    .spotlight-text {
+        font-size: 1.2rem;
+        padding: 1rem 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .spotlight-vector {
+        width: 30%;
+    }
+
+    .spotlight-title {
+        font-size: 3rem;
+    }
+
+    .spotlight-text {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .spotlight-vector {
+        width: 20%;
+    }
+
+    .spotlight-title {
+        font-size: 2.5rem;
+    }
+
+    .spotlight-text {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
 
 /* Button */
 .spotlight-btn {
     font-size: 1.2rem;
-    padding: 12px 24px;
+    padding: 14px 24px;
     border-radius: 8px;
     background-color: #BCFF83;
     border: none;
     transition: 0.3s;
-    color:#003F2E ;
+    color: #003F2E;
     font-weight: 600;
 }
 
@@ -128,9 +136,8 @@ body {
 
 .spotlight-video video {
     width: 100%;
-    max-width: 1500px; /* Increase max-width */
-    height: 600px; /* Set a fixed height */
+    max-width: 1200px;
+    height: auto;
     border-radius: 2rem;
-    object-fit: cover; /* Ensures the video maintains aspect ratio */
+    object-fit: cover;
 }
-
