@@ -4,17 +4,105 @@ body {
     background-color: #F5F6EF;
     color: #003F2E;
 }
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #F5F6EF;
+    padding: 2rem;
+    transition: 0.3s;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+/* Top Right Vector */
+.sidebar-vector-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 22rem;
+    height: 16rem;
+    z-index: -1;
+}
+
+/* Bottom Left Vector */
+.sidebar-vector-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 25rem;
+    height: 23rem;
+    z-index: -1;
+}
+
+
+.sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #003F2E;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    /* background-color: #34495e; */
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    color: #003F2E;
+    cursor: pointer;
+}
+
+
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: none; /* Hide toggle button by default */
+}
+.sidenav-link{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #003F2E;
+    /* margin-right: 2rem; */
+
+}
+
+/* Show sidebar only on mobile screens */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: block; /* Show sidebar */
+    }
+
+    .sidebar-toggle {
+        display: block; /* Show toggle button */
+    }
+}
+
 
 /* Style for navigation links */
 .navbar-nav .nav-link {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #003F2E;
     margin-right: 2rem;
 }
 
 .nav-img {
-    width: 10.5rem;
+    width: 7.5rem;
 }
 
 /* Header container */
@@ -54,13 +142,13 @@ body {
 
 /* Spotlight title */
 .spotlight-title {
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 600;
     line-height: 1.2;
     margin: 0rem 2rem;
 }
 .spotlight-text {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 1rem 0rem;
 }
 .section-text {
@@ -73,7 +161,7 @@ body {
 
 /* Button */
 .spotlight-btn {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 14px 24px;
     border-radius: 8px;
     background-color: #BCFF83;
@@ -111,7 +199,7 @@ body {
 }
 
 .section-title {
-    font-size: .8rem;
+    font-size: .7rem;
     font-weight: 600;
     margin-bottom: 1rem;
     color: #2D746D;
