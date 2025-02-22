@@ -205,7 +205,7 @@
             </p>
     
             <!-- Portfolio Grid -->
-            <div class="row mt-5">
+            <div class="row mt-5 ">
                 <!-- Portfolio Item 1 -->
                 <div class="col-md-6">
                     <div class="portfolio-item">
@@ -243,11 +243,56 @@
     <section class="what-we-do py-5">
         <div class="container text-center">
             <p class="section-title">Frequently Asked Questions</p>
-               
-            <h2 class="section-subtitle">You've got questions. we've got answers.</h2>
-            
+            <h2 class="section-subtitle">You've got questions. We've got answers.</h2>
+    
+            <!-- FAQ Container -->
+            <div class="faq-container mt-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="how-title">How often do you come per month?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="how-text">We aim to come weekly for lawn and yard maintenance, especially in peak growth season. Every yard is unique, which is why we're regularly checking up and keeping notes on your yard so we can best serve you year-round. </p>
+                    </div>
+                </div>
+    
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="how-title">What is your cancellation policy?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="how-text">We aim to come weekly for lawn and yard maintenance, especially in peak growth season. Every yard is unique, which is why we're regularly checking up and keeping notes on your yard so we can best serve you year-round. </p>
+                    </div>
+                </div>
+    
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="how-title">What is your cancellation policy?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="how-text">We aim to come weekly for lawn and yard maintenance, especially in peak growth season. Every yard is unique, which is why we're regularly checking up and keeping notes on your yard so we can best serve you year-round. </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="how-title">What is your cancellation policy?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="how-text">We aim to come weekly for lawn and yard maintenance, especially in peak growth season. Every yard is unique, which is why we're regularly checking up and keeping notes on your yard so we can best serve you year-round. </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    
+    
 
     <section class="sec position-relative">
         <img src="assets/img/960f37609c79d98cd809a8a600c44fdd (1).jpeg" class="sec-image">
@@ -311,6 +356,22 @@
         function closeSidebar() {
             document.getElementById("sidebar").style.left = "-250px";
         }
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const faqItems = document.querySelectorAll(".faq-item");
+
+            faqItems.forEach((item) => {
+                const question = item.querySelector(".faq-question");
+                const icon = item.querySelector(".faq-icon");
+
+                question.addEventListener("click", () => {
+                    item.classList.toggle("active");
+                    icon.textContent = item.classList.contains("active") ? "−" : "+";
+                });
+            });
+        });
 
     </script>
 
