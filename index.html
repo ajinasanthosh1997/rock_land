@@ -86,17 +86,34 @@
                 </div>
             </div>
     
-            <!-- Video Section -->
-            <div class="row justify-content-center mt-4">
-                <div class="col-md-10">
-                    <div class="spotlight-video">
-                        <video autoplay loop muted class="w-100">
-                            <source src="assets/video/videoplayback.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
+
+<!-- <div class="row justify-content-center mt-4">
+    <div class="col-md-10">
+        <div class="spotlight-video">
+            
+            <video id="videoPlayer" class="d-none">
+                <source src="assets/video/videoplayback.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+           
+            <div id="videoThumbnail" class="position-relative">
+                <img src="assets/img/Thumbnail.png" alt="Video Thumbnail">
+                <button id="playButton" class="play-btn">▶</button>
             </div>
+        </div>
+    </div>
+</div> -->
+<div class="row justify-content-center mt-4">
+    <div class="col-md-10">
+        <div class="spotlight-video">
+            <video autoplay loop muted class="w-100">
+                <source src="assets/video/videoplayback.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</div>
         </div>
     </section>
     <section class="what-we-do py-5">
@@ -310,15 +327,37 @@
         <div class="container">
             <div class="row">
                 <!-- Logo & Vector Image Section -->
-                <div class="col-md-4 position-relative">
+                <div class="col-md-3 position-relative text-center">
+                    <!-- Logo -->
                     <a class="navbar-brand" href="#">
                         <img src="assets/img/20240406_172737 2.png" class="nav-img" alt="Logo">
                     </a>
+                
+                    <!-- Social Media Icons (Images) -->
+                    <div class="social-icons mt-3">
+                       
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="assets/img/icon-1.png" alt="Facebook" class="social-icon">
+                        </a>
+                        <a href="https://twitter.com/" target="_blank">
+                            <img src="assets/img/ICON-2.png" alt="Twitter" class="social-icon">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="assets/img/ICON-3.png" alt="Instagram" class="social-icon">
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <img src="assets/img/ICON (3).png" alt="YouTube" class="social-icon">
+                        </a>
+                        
+                    </div>
+                
+                    <!-- Decorative Vector -->
                     <img src="assets/img/GRADIENT BOTTOM LEFT.png" class="footer-vector" alt="Decorative Vector">
                 </div>
+                
     
                 <!-- Address Section -->
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <h5>ADDRESS</h5>
                     <p>4056 Bill Land</p>
                     <p>Phone: +1 800 123 45 67</p>
@@ -326,7 +365,7 @@
                 </div>
     
                 <!-- Navigation Section -->
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <h5>NAVIGATION</h5>
                     <ul class="footer-nav">
                         <li><a href="#">Home</a></li>
@@ -336,6 +375,31 @@
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>OUR SERVICES</h5>
+                    <ul class="footer-nav">
+                        <li><a href="#">Complete Home Decor Solutions</a></li>
+                        <li><a href="#">Paving Stone Production</a></li>
+                        <li><a href="#">Comprehensive Landscaping Works</a></li>
+                        <li><a href="#">Supply of Landscaping Materials</a></li>
+                        <li><a href="#">Eco-Friendly Landscaping Solutions</a></li>
+                        <li><a href="#">Commercial and Public Landscaping</a></li>
+                        <li><a href="#">Residential Landscaping</a></li>
+                        <li><a href="#">Seasonal Planting and Maintenance</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <!-- Left Side: Copyright -->
+                <p class="mb-0">&copy; 2025 Rock Land Services. All rights reserved.</p>
+    
+                <!-- Right Side: Links -->
+                <div class=" d-flex justify-content-between align-items-center flex-wrap">
+                    <a href="#" class="footer-link">Privacy Policy</a> &nbsp;&nbsp;&nbsp;
+                    <a href="#" class="footer-link">Terms and Conditions</a>
                 </div>
             </div>
         </div>
