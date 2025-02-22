@@ -402,6 +402,55 @@ body {
     opacity: 0.7;
 }
 
+.port-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #003F2E;
+    padding-bottom: 1rem;
+
+}
+
+.portfolio-item {
+    position: relative;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.portfolio-image {
+    width: 90%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.portfolio-text {
+    position: absolute;
+    bottom: -50px; /* Moves text below the image */
+    left: 45%;
+    transform: translateX(-50%);
+    width: 60%;
+    height:44%;
+    padding: 22px;
+    border-radius: 2rem 2rem 4rem 2rem;
+    background: #f8f9fa;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure the parent container has extra space */
+.col-md-6 {
+    position: relative;
+    padding-bottom: 80px; /* Creates space for the text below */
+}
+
+.portfolio-icon {
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .footer .row {
@@ -412,6 +461,33 @@ body {
     }
     .footer-vector {
         width: 180px; /* Smaller vector on mobile */
+    }
+    .portfolio-text {
+        left:50%;
+       
+        width: 74%;
+        height: 60%;
+    }
+    .portfolio-image {
+        width: 100%;
+    }
+    .port-title{
+        font-size: .8rem;
+       
+    }
+    .m{
+        font-size: .6rem;
+    }
+    .sec-title {
+        font-size: 1.8rem;
+    }
+    .sec {
+        position: relative;
+        padding: 0rem 3rem;
+        padding-bottom: 0rem;
+    }
+    .sec-text {
+        font-size: 1rem;
     }
 }
 
@@ -429,6 +505,22 @@ body {
 @media (max-width: 480px) {
     .spotlight-title {
         font-size: 1.8rem;
+    }
+    .port-title{
+        font-size: .8rem;
+       
+    }
+    .m{
+        font-size: .6rem;
+    }
+    .portfolio-text {
+        left:50%;
+       
+        width: 74%;
+        height: 60%;
+    }
+    .portfolio-image {
+        width: 100%;
     }
 }
 
@@ -499,6 +591,8 @@ body {
         margin-top: 2rem;
     }
 }
+
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
