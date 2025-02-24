@@ -217,7 +217,7 @@ body {
     font-weight: 600;
     color: #003F2E; /* Darker green */
     margin-bottom: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 .how-it-works-box {
@@ -574,7 +574,7 @@ body {
     transform: scale(1.2); /* Slight zoom effect on hover */
 }
 .shorts-section {
-    padding: 40px 0;
+    padding: 10px 0;
     /* background-color: #f9f9f9; */
     text-align: center;
 }
