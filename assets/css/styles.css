@@ -311,6 +311,7 @@ body {
 /* Image Styling */
 .sec-image {
     width: 100%;
+    height: 16rem;
     border-radius: 2rem;
     object-fit: cover;
     display: block;
@@ -637,7 +638,7 @@ body {
         font-size: .6rem;
     }
     .sec {
-        padding: 2rem;  /* Reduce padding on mobile */
+        padding: 1rem;  /* Reduce padding on mobile */
     }
 
     .sec-content {
