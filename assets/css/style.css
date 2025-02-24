@@ -20,7 +20,76 @@
     opacity: 0.8;
 }
 
+.map-container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 2rem;
+}
 
+.map-frame {
+    width: 950px;
+    height: 450px;
+    border: none;
+    border-radius: 2rem;
+}
+.spot-text1 {
+    font-size: 1rem;
+    padding: 1rem 5rem;
+}
+.icon1{
+    padding: 1rem 0;
+}
+
+
+.form-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 1;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #98D0DC;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+}
 @media (max-width: 768px) {
     .spot-title {
         font-size: 2rem;
@@ -33,8 +102,28 @@
     .spot-vector {
         width: 30%;
     }
+    .spot-text1 {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+    
+    
+    .map-frame {
+        width: 400px;
+        height: 550px;
+        border: none;
+        border-radius: 2rem;
+    }
 
     
+}
+@media (min-width: 800px) and (max-width: 1440px) {
+    .map-frame {
+        width: 600px;
+        height: 550px;
+        border: none;
+        border-radius: 2rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -48,6 +137,10 @@
         font-size: 2.5rem;
     }
     .spot-text {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .spot-text1 {
         font-size: 1rem;
         padding: 1rem;
     }
