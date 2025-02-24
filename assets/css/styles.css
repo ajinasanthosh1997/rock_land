@@ -142,7 +142,7 @@ body {
 
 /* Spotlight title */
 .spotlight-title {
-    font-size: 4rem;
+    font-size: 3.6rem;
     font-weight: 600;
     line-height: 1.2;
     margin: 0rem 2rem;
@@ -199,6 +199,7 @@ body {
 }
 
 .section-title {
+    padding-bottom: 1rem;
     font-size: .7rem;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -596,7 +597,7 @@ body {
     font-weight: 500;
     margin-top: 10px;
     /* color: #333; */
-    padding:10px;
+    padding:40px;
 }
 
 
@@ -628,16 +629,28 @@ body {
     .m{
         font-size: .6rem;
     }
-    .sec-title {
-        font-size: 1.8rem;
-    }
     .sec {
-        position: relative;
-        padding: 0rem 3rem;
-        padding-bottom: 0rem;
+        padding: 2rem;  /* Reduce padding on mobile */
     }
+
+    .sec-content {
+        width: 90%;
+        max-width: 400px; /* Adjust overlay size */
+    }
+
+    .sec-title {
+        font-size: 2rem; /* Reduce title size */
+        margin: 0rem 1rem;
+    }
+
     .sec-text {
         font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .sec-btn {
+        font-size: 1rem;
+        padding: 8px 15px;
     }
 }
 
