@@ -671,6 +671,13 @@ body {
     .sec-content {
         width: 90%;
     }
+    .footer-vector {
+        
+        left: -95px;
+        bottom: -790px;
+        width: 26rem;
+        height: 34rem;
+    }
 }
 
 @media (max-width: 480px) {
