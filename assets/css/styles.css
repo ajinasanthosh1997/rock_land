@@ -153,7 +153,7 @@ body {
 }
 .section-text {
     font-size: 1.2rem;
-   padding: 1rem 12rem;
+   padding: 1rem 14rem;
 }
 
 
@@ -207,6 +207,12 @@ body {
 }
 
 .section-subtitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #003F2E; /* Darker green */
+    margin-bottom: 1rem;
+}
+.section-subtitle1 {
     font-size: 2rem;
     font-weight: 600;
     color: #003F2E; /* Darker green */
@@ -708,6 +714,9 @@ body {
     .section-subtitle {
         font-size: 1.6rem;
     }
+    .section-subtitle1 {
+        font-size: 1.6rem;
+    }
     .section-text {
         font-size: 1.2rem;
     }
@@ -743,6 +752,9 @@ body {
     .section-subtitle {
         font-size: 1.4rem;
     }
+    .section-subtitle1 {
+        font-size: 1.4rem;
+    }
     .section-text {
         font-size: 1.2rem;
        padding: 1rem 1rem;
@@ -766,6 +778,9 @@ body {
     .section-subtitle {
         font-size: 1.6rem;
     }
+    .section-subtitle1 {
+        font-size: 1.6rem;
+    }
     .stat-number {
         font-size: 2rem;
     }
@@ -778,6 +793,10 @@ body {
     .section-subtitle {
         font-size: 1.4rem;
     }
+    .section-subtitle1 {
+        font-size: 1.4rem;
+    }
+   
    
 }
 
