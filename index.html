@@ -256,7 +256,6 @@
         </div>
     </section>
     <!-- SECTION: Shorts Carousel -->
-<!-- SECTION: Shorts Carousel -->
 <section class="shorts-section">
     <div class="container">
         <p class="section-title">SOCIAL MEDIA</p>
@@ -295,9 +294,18 @@
                 </iframe>
                 <p class="short-description">Backyard transformation with a pool, fire pit, landscaping & more</p>
             </div>
+
+            <!-- Additional Shorts -->
+            <div class="short-card">
+                <iframe src="https://www.youtube.com/embed/gVKylo9m-08?controls=0&modestbranding=1&rel=0" 
+                    frameborder="0" allowfullscreen class="shorts-video">
+                </iframe>
+                <p class="short-description">Backyard transformation with a pool, fire pit, landscaping & more</p>
+            </div>
         </div>
     </div>
 </section>
+
 
     
 
@@ -451,32 +459,31 @@
         </div>
     </footer>
     <!-- Owl Carousel CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
-<!-- jQuery & Owl Carousel JS -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- jQuery & Owl Carousel JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-<!-- Initialize the Carousel -->
-<script>
-$(document).ready(function(){
-    $(".shorts-carousel").owlCarousel({
-        loop: true,  // Enables infinite loop
-        margin: 10,  // Space between items
-        nav: true,  // Show next/prev buttons
-        autoplay: true,  // Auto-scroll
-        autoplayTimeout: 3000,  // 3-second delay
-        autoplayHoverPause: true,  // Pause on hover
-        navText: ["", ""],  // Removes default text inside buttons
-        responsive:{
-            0:{ items: 1 },  // 1 item on mobile
-            768:{ items: 2 },  // 2 items on tablets
-            1024:{ items: 4 }  // 4 items on desktop
-        }
+    <!-- Initialize the Carousel -->
+    <script>
+    $(document).ready(function(){
+        $(".shorts-carousel").owlCarousel({
+            loop: true,  // Enables infinite loop
+            margin: 10,  // Space between items
+            nav: false,  // Show next/prev buttons
+            autoplay: true,  // Auto-scroll
+            autoplayTimeout: 3000,  // 3-second delay
+            autoplayHoverPause: true,  // Pause on hover
+            responsive:{
+                0:{ items: 1 },  // 1 item on mobile
+                768:{ items: 2 },  // 2 items on tablets
+                1024:{ items: 4 }  // 4 items on desktop
+            }
+        });
     });
-});
-</script>
+    </script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
