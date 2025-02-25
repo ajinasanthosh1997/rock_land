@@ -263,44 +263,49 @@
             <div class="owl-carousel shorts-carousel">
                 <!-- Short 1 -->
                 <div class="short-card">
-                    <iframe src="https://www.youtube.com/embed/Z_4yBu64K7c?controls=0&modestbranding=1&rel=0" 
-                        frameborder="0" allowfullscreen class="shorts-video">
-                    </iframe>
+                    <div class="video-wrapper" data-video="https://www.youtube.com/embed/Z_4yBu64K7c?">
+                        <img src="assets/img/image.jpg" alt="Thumbnail" class="video-thumbnail">
+                        <button class="play-btn">▶</button>
+                    </div>
                     <p class="short-description">Backyard transformation with a pool, fire pit, landscaping & more</p>
                 </div>
-
+            
                 <!-- Short 2 -->
                 <div class="short-card">
-                    <iframe src="https://www.youtube.com/embed/kJTKEOi-tOQ?controls=0&modestbranding=1&rel=0" 
-                        frameborder="0" allowfullscreen class="shorts-video">
-                    </iframe>
+                    <div class="video-wrapper" data-video="https://www.youtube.com/embed/kJTKEOi-tOQ?">
+                        <img src="assets/img/image21.jpg" alt="Thumbnail" class="video-thumbnail">
+                        <button class="play-btn">▶</button>
+                    </div>
                     <p class="short-description">Backyard transformation with a pool, fire pit, landscaping & more</p>
                 </div>
-
+            
                 <!-- Short 3 -->
                 <div class="short-card">
-                    <iframe src="https://www.youtube.com/embed/AaWSuPO7mNM?controls=0&modestbranding=1&rel=0" 
-                        frameborder="0" allowfullscreen class="shorts-video">
-                    </iframe>
+                    <div class="video-wrapper" data-video="https://www.youtube.com/embed/AaWSuPO7mNM?">
+                        <img src="assets/img/image22.jpg" alt="Thumbnail" class="video-thumbnail">
+                        <button class="play-btn">▶</button>
+                    </div>
                     <p class="short-description">Backyard transformation with a pool, fire pit, landscaping & more</p>
                 </div>
-
+            
                 <!-- Short 4 -->
                 <div class="short-card">
-                    <iframe src="https://www.youtube.com/embed/IpdCy8uM97Q?controls=0&modestbranding=1&rel=0" 
-                        frameborder="0" allowfullscreen class="shorts-video">
-                    </iframe>
+                    <div class="video-wrapper" data-video="https://www.youtube.com/embed/IpdCy8uM97Q?">
+                        <img src="assets/img/image23.jpg" alt="Thumbnail" class="video-thumbnail">
+                        <button class="play-btn">▶</button>
+                    </div>
                     <p class="short-description">Backyard transformation with a pool, fire pit, landscaping & more</p>
                 </div>
-
-                <!-- Additional Shorts -->
+            
                 <div class="short-card">
-                    <iframe src="https://www.youtube.com/embed/gVKylo9m-08?controls=0&modestbranding=1&rel=0" 
-                        frameborder="0" allowfullscreen class="shorts-video">
-                    </iframe>
+                    <div class="video-wrapper" data-video="https://www.youtube.com/embed/AaWSuPO7mNM?">
+                        <img src="assets/img/image22.jpg" alt="Thumbnail" class="video-thumbnail">
+                        <button class="play-btn">▶</button>
+                    </div>
                     <p class="short-description">Backyard transformation with a pool, fire pit, landscaping & more</p>
                 </div>
             </div>
+            
         </div>
     </section>
 
@@ -522,6 +527,30 @@
                 videoPlayer.play();
             });
         });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const playButtons = document.querySelectorAll(".play-btn");
+        
+            playButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    const wrapper = button.parentElement;
+                    const videoUrl = wrapper.getAttribute("data-video") + "&autoplay=1";
+                    const iframe = document.createElement("iframe");
+                    iframe.setAttribute("src", videoUrl);
+                    iframe.setAttribute("frameborder", "0");
+                    iframe.setAttribute("allowfullscreen", "true");
+                    iframe.setAttribute("allow", "autoplay"); // Allow autoplay
+                    iframe.classList.add("shorts-video");
+        
+                    // Replace the thumbnail and play button with the video iframe
+                    wrapper.innerHTML = "";
+                    wrapper.appendChild(iframe);
+                });
+            });
+        });
+        
+        
     </script>
 
 
