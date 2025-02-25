@@ -87,24 +87,22 @@
             </div>
     
 
-        <!-- <div class="row justify-content-center mt-4">
-            <div class="col-md-10">
-                <div class="spotlight-video">
-                    
-                    <video id="videoPlayer" class="d-none">
-                        <source src="assets/video/videoplayback.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-
-                
-                    <div id="videoThumbnail" class="position-relative">
-                        <img src="assets/img/Thumbnail.png" alt="Video Thumbnail">
-                        <button id="playButton" class="play-btn">▶</button>
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-10">
+                    <div class="spotlight-video">
+                        <video id="videoPlayer" class="d-none">
+                            <source src="assets/video/videoplayback.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+            
+                        <div id="videoThumbnail" class="position-relative">
+                            <img src="assets/img/image12.png" alt="Video Thumbnail" class="thumbnail">
+                            <button id="playButton" class="play-btn">▶</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            </div> -->
-            <div class="row justify-content-center mt-4">
+            <!-- <div class="row justify-content-center mt-4">
                 <div class="col-md-10">
                     <div class="spotlight-video">
                         <video autoplay loop muted class="w-100">
@@ -113,7 +111,7 @@
                         </video>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <section class="what-we-do py-3">
@@ -508,6 +506,22 @@
             });
         });
 
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const videoPlayer = document.getElementById("videoPlayer");
+            const videoThumbnail = document.getElementById("videoThumbnail");
+            const playButton = document.getElementById("playButton");
+    
+            playButton.addEventListener("click", function () {
+                // Hide the thumbnail and show the video
+                videoThumbnail.style.display = "none";
+                videoPlayer.classList.remove("d-none");
+    
+                // Play the video
+                videoPlayer.play();
+            });
+        });
     </script>
 
 
