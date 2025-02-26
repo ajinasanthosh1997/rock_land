@@ -749,6 +749,9 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .pad1 {
+        padding: 0 0rem;
+    }
     .footer .row {
         text-align: center;
     }
