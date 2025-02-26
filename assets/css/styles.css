@@ -748,12 +748,21 @@ body {
     margin-right: 5rem;
 }
 
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
 
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .pad {
         margin-left: 0rem;
+    }
+    .pad5{
+        margin-right: 0;
     }
     .modal-body{
         text-align: left;
@@ -768,6 +777,7 @@ body {
     }
     .pad2 {
         padding: 0 0rem;
+        
     }
     .pad1 {
         padding: 0 0rem;
@@ -852,7 +862,7 @@ body {
     .footer-vector {
         
         left: -95px;
-        bottom: -888px;
+        bottom: -916px;
         width: 26rem;
         height: 34rem;
     }
@@ -885,13 +895,12 @@ body {
 
 @media (max-width: 768px) {
     .footer-links {
-        display: block !important; /* Remove flex layout on mobile */
+        flex-direction: column; /* Remove flex layout on mobile */
         text-align: center;
+        padding-left: 6rem;
+        padding-top: 1rem;
       }
-      .footer-links a {
-        display: inline-block; /* Ensure links display inline */
-        margin: 0 5px; /* Adjust spacing as needed */
-      }
+      
     .spotlight-vector {
         width: 30%;
     }
