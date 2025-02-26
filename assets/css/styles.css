@@ -852,9 +852,12 @@ body {
     .footer-vector {
         
         left: -95px;
-        bottom: -790px;
+        bottom: -888px;
         width: 26rem;
         height: 34rem;
+    }
+    .pad4{
+        padding-left: 4rem;
     }
 }
 
@@ -881,6 +884,14 @@ body {
 
 
 @media (max-width: 768px) {
+    .footer-links {
+        display: block !important; /* Remove flex layout on mobile */
+        text-align: center;
+      }
+      .footer-links a {
+        display: inline-block; /* Ensure links display inline */
+        margin: 0 5px; /* Adjust spacing as needed */
+      }
     .spotlight-vector {
         width: 30%;
     }
