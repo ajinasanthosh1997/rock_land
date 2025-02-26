@@ -13,6 +13,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
@@ -28,8 +29,8 @@
 
     <!-- Sidebar Navigation -->
     <div class="sidebar" id="sidebar">
-        <img src="assets/img/GRADIENT TOP RIGHT.png" class="sidebar-vector-top">
-        <span class="close-btn" onclick="closeSidebar()">×</span>
+        <!-- <img src="assets/img/GRADIENT TOP RIGHT.png" class="sidebar-vector-top"> -->
+        
         <a class="navbar-brand" href="#"><img src="assets/img/20240406_172737 2.png" class="nav-img" alt=""></a>
         <a class="sidenav-link" href="index.html">Home</a>
         <a class="sidenav-link" href="about.html">About</a>
@@ -37,7 +38,8 @@
         <a class="sidenav-link" href="portfolio.html">Portfolio</a>
         <a class="sidenav-link" href="contact.html">Contact</a>
         <a class="sidenav-link"href="#">Blog</a>
-        <img src="assets/img/GRADIENT BOTTOM LEFT.png" class="sidebar-vector-bottom">
+        <span class="close-btn" onclick="closeSidebar()">×</span>
+        <!-- <img src="assets/img/GRADIENT BOTTOM LEFT.png" class="sidebar-vector-bottom"> -->
     </div>
 
 
@@ -81,9 +83,51 @@
                     <p class="spotlight-text">
                         Transform your outdoors with Rock Land’s expert stone artistry! From premium rocks, pebbles, and rock furniture to lush greenery, we craft stunning landscapes that blend nature’s raw beauty with refined design. Elevate your space with the perfect balance of strength and serenity.
                     </p>
-                    <a href="#" class="btn btn-primary spotlight-btn">Schedule a call</a>
+                    <a href="#" class="btn btn-primary spotlight-btn" data-bs-toggle="modal" data-bs-target="#scheduleCallModal">
+                        Schedule a call
+                      </a>
                 </div>
             </div>
+            <div class="modal fade py-4" id="scheduleCallModal" tabindex="-1" aria-labelledby="scheduleCallModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modalheader">
+                            <h3 class="section-subtitle" id="scheduleCallModalLabel">Let's schedule your call</h3>
+                            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        </div>
+                        <div class="modal-body">
+                            <p>Connect with our experts to kickstart your dream outdoor project.</p>
+                            <form id="scheduleCallForm">
+                                <div class="row mb-3">
+                                    <div class="col">
+                                            <label for="callName" class="form-label">Name</label>
+                                            <input type="text" class="form-control" id="callName" placeholder="Write your name" required>
+                                    </div>
+                                    <div class="col">
+                                        <label for="callEmail" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="callEmail" placeholder="Write your email address" required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <label for="callPhone" class="form-label">Phone number</label>
+                                        <input type="tel" class="form-control" id="callPhone" placeholder="Write your phone number" required>
+                                    </div>
+                                    <div class="col">
+                                        <label for="callProject" class="form-label">What you’re looking for</label>
+                                        <input type="text" class="form-control" id="callProject" placeholder="Residential Landscaping" required>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary spotlight-btn" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary spotlight-btn">Schedule a call</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              
     
 
             <div class="row justify-content-center mt-4">
@@ -179,12 +223,12 @@
             </p>
     
             <!-- New Div containing three sub-divs -->
-            <div class="row mt-5">
+            <div class="row mt-5 pad1">
                 <!-- Step 1 -->
                 <div class="col-md-4">
                     <div class="how-it-works-box">
                         <img src="assets/img/Icon.png" alt="Step 1" class="how-icon">
-                        <p class="section-title">Step 1</p>
+                        <p class="section-title">STEP 1</p>
                         <h4 class="how-title">Consultation</h4>
                         <p class="how-text">Schedule a thorough consultation with our landscaping experts to discuss your specific needs, preferences, and budget. </p>
                     </div>
@@ -194,7 +238,7 @@
                 <div class="col-md-4">
                     <div class="how-it-works-box">
                         <img src="assets/img/Icon (1).png" alt="Step 2" class="how-icon">
-                        <p class="section-title">Step 2</p>
+                        <p class="section-title">STEP 2</p>
                         <h4 class="how-title">Proposal</h4>
                         <p class="how-text">We will create a detailed design proposal outlining the recommended landscaping services, materials, and estimated costs. </p>
                     </div>
@@ -204,7 +248,7 @@
                 <div class="col-md-4">
                     <div class="how-it-works-box">
                         <img src="assets/img/Icon (2).png" alt="Step 3" class="how-icon">
-                        <p class="section-title">Step 3</p>
+                        <p class="section-title">STEP 3</p>
                         <h4 class="how-title">Implementation</h4>
                         <p class="how-text">From site preparation to planting and finishing touches, we'll execute the plan with precision and professionalism</p>
                     </div>
@@ -223,7 +267,9 @@
             </p>
     
             <!-- Portfolio Grid -->
-            <div class="row mt-5 ">
+            <div class="row mt-5 pad">
+                <!-- <div class="col-md-5">
+                </div> -->
                 <!-- Portfolio Item 1 -->
                 <div class="col-md-6">
                     <div class="portfolio-item">
@@ -233,7 +279,7 @@
                             <p class="m">Maintenance</p>
                             <p class="port-title">Backyard transformation with a pool,fire pit, landscaping & more</p>
                             <div>
-                                <img src="assets/img/Button.png" alt="Icon">
+                                <img src="assets/img/Button.png" alt="Icon" class="port-img">
                             </div>
                         </div>
                     </div>
@@ -248,7 +294,7 @@
                             <p class="m">Maintenance</p>
                             <p class="port-title">Backyard transformation with a pool,fire pit, landscaping & more</p>
                             <div >
-                                <img src="assets/img/Button.png" alt="Icon">
+                                <img src="assets/img/Button.png" alt="Icon" class="port-img">
                             </div>
                         </div>
                     </div>
@@ -263,7 +309,7 @@
             <h2 class="section-subtitle1">Vertical Vibes</h2>
 
             <!-- Owl Carousel Wrapper -->
-            <div class="owl-carousel shorts-carousel">
+            <div class="owl-carousel shorts-carousel pad2">
                 <!-- Short 1 -->
                 <div class="short-card">
                     <div class="video-wrapper" data-video="https://www.youtube.com/embed/Z_4yBu64K7c?">
@@ -391,16 +437,16 @@
                     <!-- Social Media Icons (Images) -->
                     <div class="social-icons mt-3">
                        
-                        <a href="https://www.facebook.com/" target="_blank">
+                        <a href="https://www.facebook.com/rock.land.33?mibextid=qi2Omg&rdid=Gc7xAQL6J9Oy2PxW&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FZ3kxhAoDuTYsVhMz%2F%3Fmibextid%3Dqi2Omg#" target="_blank">
                             <img src="assets/img/icon-1.png" alt="Facebook" class="social-icon">
                         </a>
                         <a href="https://twitter.com/" target="_blank">
                             <img src="assets/img/ICON-2.png" alt="Twitter" class="social-icon">
                         </a>
-                        <a href="https://www.instagram.com/" target="_blank">
+                        <a href="https://www.instagram.com/rocklandlandscaping?igsh=MTFnbjl5NHI2a2FrYw%3D%3D" target="_blank">
                             <img src="assets/img/ICON-3.png" alt="Instagram" class="social-icon">
                         </a>
-                        <a href="https://www.youtube.com/" target="_blank">
+                        <a href="https://www.youtube.com/@ROCKland-landscaping" target="_blank">
                             <img src="assets/img/ICON (3).png" alt="YouTube" class="social-icon">
                         </a>
                         
@@ -414,9 +460,14 @@
                 <!-- Address Section -->
                 <div class="col-md-3 py-3">
                     <h5>ADDRESS</h5>
-                    <p>4056 Bill Land</p>
-                    <p>Phone: +1 800 123 45 67</p>
-                    <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                    <p>Rockland,Kilimanoor,<br>Thiruvananthapuram</p>
+                    <p>
+                        Phone: 
+                        <a href="tel:+917510777766" class="hover">+91 7510777766</a><br>
+                        <a href="tel:+918358882888" class="hover">+91 83588 82888</a>
+                      </p>
+                      <p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mail@rockland.co.in" class="hover" target="_blank">mail@rockland.co.in</a></p>
+
                 </div>
     
                 <!-- Navigation Section -->
@@ -446,13 +497,13 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container pad4">
             <div class="d-flex justify-content-between align-items-center flex-wrap text-center">
                 <!-- Left Side: Copyright -->
                 <p class="mb-0">&copy; 2025 Rock Land Services. All rights reserved.</p>
     
                 <!-- Right Side: Links -->
-                <div class=" d-flex justify-content-between align-items-center flex-wrap">
+                <div class="d-flex justify-content-between align-items-center flex-wrap pad5">
                     <a href="#" class="footer-link">Privacy Policy</a> &nbsp;&nbsp;&nbsp;
                     <a href="#" class="footer-link">Terms and Conditions</a>
                 </div>
@@ -473,7 +524,7 @@
         $(".shorts-carousel").owlCarousel({
             loop: true,  // Enables infinite loop
             margin: 10,  // Space between items
-            nav: true,  // Show next/prev buttons
+            nav: false,  // Show next/prev buttons
             autoplay: false,  // Auto-scroll
             autoplayTimeout: 3000,  // 3-second delay
             autoplayHoverPause: true,  // Pause on hover
@@ -495,7 +546,7 @@
         }
 
         function closeSidebar() {
-            document.getElementById("sidebar").style.left = "-250px";
+            document.getElementById("sidebar").style.left = "-375px";
         }
 
     </script>
