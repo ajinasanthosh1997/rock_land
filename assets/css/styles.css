@@ -752,6 +752,12 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .short-description {
+        padding: 1rem 4rem;
+    }
+    .pad2 {
+        padding: 0 0rem;
+    }
     .pad1 {
         padding: 0 0rem;
     }
