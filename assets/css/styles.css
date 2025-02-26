@@ -752,6 +752,14 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .modal-body{
+        text-align: left;
+        padding: 0;
+    }
+    .modalheader{
+        text-align: left ;
+       
+    }
     .short-description {
         padding: 1rem 4rem;
     }
@@ -778,6 +786,9 @@ body {
     }
     .portfolio-image {
         width: 100%;
+    }
+    .modal-content {
+        padding: 1rem 1rem;
     }
     .port-title{
         font-size: .8rem;
