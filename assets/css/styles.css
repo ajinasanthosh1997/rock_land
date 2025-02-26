@@ -897,7 +897,7 @@ body {
     .footer-links {
         flex-direction: column; /* Remove flex layout on mobile */
         text-align: center;
-        padding-left: 4rem;
+        padding-left: 2rem;
         padding-top: 1rem;
       }
       
