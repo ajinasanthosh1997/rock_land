@@ -8,7 +8,7 @@ body {
     position: fixed;
     text-align: center;
     top: 0;
-    left: -390px;
+    left: -2500px;
     width: 100%;
     height: 100%;
     background: #FFFFFF;
@@ -573,6 +573,9 @@ body {
 .pad2{
     padding: 0 10rem;
 }
+.pad12{
+    padding: 0 10rem;
+}
 /* Ensure the parent container has extra space */
 .col-md-6 {
     position: relative;
@@ -946,6 +949,9 @@ body {
     }
     .stat-number {
         font-size: 2rem;
+    }
+    .pad12{
+        padding: 0rem 0rem;
     }
 }
 
