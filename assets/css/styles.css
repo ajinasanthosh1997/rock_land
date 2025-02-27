@@ -100,7 +100,7 @@ body {
 .c1{
     text-align: center;
 }
-.modal-body input {
+.modal-body input{
     width: 100%;
     padding: 0.6rem;
     border: 1px solid #98D0DC;
@@ -108,6 +108,26 @@ body {
     font-size: .8rem;
     color:#2D746D;
     /* text-decoration: none; */
+}
+.form{
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #98D0DC;
+    border-radius: 0.5rem;
+    font-size: .8rem;
+    color:#2D746D;
+   
+}
+.form-row {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 1;
+    text-align: left;
+    margin-bottom: 1rem;
 }
 
 .form-control {
@@ -377,6 +397,9 @@ body {
     font-weight: 600;
     margin-bottom: 1rem;
     color: #003F2E;
+}
+.w{
+    width:16rem;
 }
 
 /* Button */
@@ -758,6 +781,17 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .spotlight-video {
+        position: relative;
+        width: 100%;
+        max-width: 900px;
+        height: 285px;
+        margin: auto;
+        padding-top: 1.5rem;
+    }
+    .form-row {
+        flex-direction: column;
+    }
     .pad {
         margin-left: 0rem;
     }
