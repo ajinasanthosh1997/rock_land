@@ -541,21 +541,23 @@
 
     <!-- Initialize the Carousel -->
     <script>
-    $(document).ready(function(){
-        $(".shorts-carousel").owlCarousel({
-            loop: true,  // Enables infinite loop
-            margin: 10,  // Space between items
-            nav: false,  // Show next/prev buttons
-            autoplay: false,  // Auto-scroll
-            autoplayTimeout: 3000,  // 3-second delay
-            autoplayHoverPause: true,  // Pause on hover
-            responsive:{
-                0:{ items: 1 },  // 1 item on mobile
-                768:{ items: 2 },  // 2 items on tablets
-                1024:{ items: 4 }  // 4 items on desktop
-            }
+        $(document).ready(function(){
+            $(".shorts-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                autoplay: false,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive:{
+                    0: { items: 1 },       // Mobile devices
+                    768: { items: 2 },     // Small tablets
+                    834: { items: 3 },     // iPad Pro portrait and similar
+                    1024: { items: 4 }     // Larger screens & iPad Pro landscape
+                }
+            });
         });
-    });
+        
     </script>
 
     <!-- Bootstrap JS -->
