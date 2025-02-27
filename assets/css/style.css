@@ -99,6 +99,11 @@ textarea {
     }
 }
 @media (max-width: 768px) {
+    .short-card {
+        align-items: flex-start;
+        
+    }
+    
     .spot-title {
         font-size: 2rem;
     }
