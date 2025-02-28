@@ -954,14 +954,7 @@ body {
         left: 45%; /* Adjust value as needed */
         -webkit-transform: translate(-45%, -50%);
         transform: translate(-45%, -50%);
-        color: #FFFFFF;
-        font-size: 40px;
-        border: none;
-        cursor: pointer;
         
-        background: none; /* Remove background */
-        box-shadow: none; /* Remove any shadow */
-        outline: none; /* Remove outline */
     }
 }
 
