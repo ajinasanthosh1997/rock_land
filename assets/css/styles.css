@@ -832,7 +832,7 @@ body {
     }
     
     .short-description {
-        padding: 1rem 4rem;
+        padding: .5rem 0rem;
         font-size: 19px;
     }
     .pad2 {
