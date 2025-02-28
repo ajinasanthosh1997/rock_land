@@ -793,7 +793,7 @@ body {
         /* align-items: flex-start; */
         width:100% !important;
         /* padding-left: 1.5rem; */
-        height:550px;
+        height:650px;
         
     }
     .shorts-video {
@@ -830,8 +830,10 @@ body {
         text-align: left ;
        
     }
+    
     .short-description {
         padding: 1rem 4rem;
+        font-size: 19px;
     }
     .pad2 {
         padding: 0 0rem;
