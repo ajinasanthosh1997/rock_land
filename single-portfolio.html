@@ -150,27 +150,27 @@
             <div class="row py-3">
                 <!-- Gallery Image 1 -->
                 <div class="col-md-4 mb-4">
-                    <img src="assets/img/Gallery (1).png" class="" alt="Gallery Image 1">
+                    <img src="assets/img/Gallery (1).png" class="img-fluid rounded" alt="Gallery Image 1">
                 </div>
                 <!-- Gallery Image 2 -->
                 <div class="col-md-4 mb-4">
-                    <img src="assets/img/Gallery (2).png" class="" alt="Gallery Image 2">
+                    <img src="assets/img/Gallery (2).png" class="img-fluid rounded" alt="Gallery Image 2">
                 </div>
                 <!-- Gallery Image 3 -->
                 <div class="col-md-4 mb-4">
-                    <img src="assets/img/Gallery (3).png" class="" alt="Gallery Image 3">
+                    <img src="assets/img/Gallery (3).png" class="img-fluid rounded" alt="Gallery Image 3">
                 </div>
                 <!-- Gallery Image 4 -->
                 <div class="col-md-4 mb-4">
-                    <img src="assets/img/Gallery (4).png" class="" alt="Gallery Image 4">
+                    <img src="assets/img/Gallery (4).png" class="img-fluid rounded" alt="Gallery Image 4">
                 </div>
                 <!-- Gallery Image 5 -->
                 <div class="col-md-4 mb-4">
-                    <img src="assets/img/Gallery (5).png" class="" alt="Gallery Image 5">
+                    <img src="assets/img/Gallery (5).png" class="img-fluid rounded" alt="Gallery Image 5">
                 </div>
                 <!-- Gallery Image 6 -->
                 <div class="col-md-4 mb-4">
-                    <img src="assets/img/Gallery (6).png" class="" alt="Gallery Image 6">
+                    <img src="assets/img/Gallery (6).png" class="img-fluid rounded" alt="Gallery Image 6">
                 </div>
             </div>
         </div>
@@ -240,6 +240,60 @@
             
         </div>
     </section>
+    <div class="modal fade py-4" id="scheduleCallModal" tabindex="-1" aria-labelledby="scheduleCallModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modalheader">
+                    <h3 class="section-subtitle" id="scheduleCallModalLabel">Let's schedule your call</h3>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <p>Connect with our experts to kickstart your dream outdoor project.</p>
+                    <form id="scheduleCallForm">
+                        <div class="form-row">
+                            <!-- Name -->
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="callName" placeholder="Write your name" required>
+                                
+                            </div>
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Write your email address" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <!-- Phone Number -->
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Write your phone number" required>
+                            </div>
+                            <!-- Address -->
+                            <div class="form-group">
+                                <label for="callProject">What you’re looking for</label>
+                                <select id="callProject" class="form" required>
+                                    <option value="" selected class="form">Select an option</option>
+                                    <option value="residential" class="form">Residential Landscaping</option>
+                                    <option value="commercial" class="form">Commercial Landscaping</option>
+                                    <option value="maintenance" class="form">Garden Maintenance</option>
+                                    <option value="stonework" class="form">Stonework & Design</option>
+                                    <option value="other" class="form">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary spotlight-btn" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary spotlight-btn">Schedule a call</button>
+                        </div>
+                        
+
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
     
     <footer class="footer">
         <div class="container ">
