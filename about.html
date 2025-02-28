@@ -24,13 +24,15 @@
 <body>
     
 
+     
+
     <!-- Sidebar Toggle Button (Visible on Mobile) -->
 
 
     <!-- Sidebar Navigation -->
     <div class="sidebar" id="sidebar">
-        <img src="assets/img/GRADIENT TOP RIGHT.png" class="sidebar-vector-top">
-        <span class="close-btn" onclick="closeSidebar()">×</span>
+        <!-- <img src="assets/img/GRADIENT TOP RIGHT.png" class="sidebar-vector-top"> -->
+        
         <a class="navbar-brand" href="#"><img src="assets/img/20240406_172737 2.png" class="nav-img" alt=""></a>
         <a class="sidenav-link" href="index.html">Home</a>
         <a class="sidenav-link" href="about.html">About</a>
@@ -38,7 +40,8 @@
         <a class="sidenav-link" href="portfolio.html">Portfolio</a>
         <a class="sidenav-link" href="contact.html">Contact</a>
         <a class="sidenav-link"href="#">Blog</a>
-        <img src="assets/img/GRADIENT BOTTOM LEFT.png" class="sidebar-vector-bottom">
+        <span class="close-btn" onclick="closeSidebar()">×</span>
+        <!-- <img src="assets/img/GRADIENT BOTTOM LEFT.png" class="sidebar-vector-bottom"> -->
     </div>
 
 
@@ -187,6 +190,60 @@
             </a>
         </div>
     </section>
+    <div class="modal fade py-4" id="scheduleCallModal" tabindex="-1" aria-labelledby="scheduleCallModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modalheader">
+                    <h3 class="section-subtitle" id="scheduleCallModalLabel">Let's schedule your call</h3>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <p>Connect with our experts to kickstart your dream outdoor project.</p>
+                    <form id="scheduleCallForm">
+                        <div class="form-row">
+                            <!-- Name -->
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="callName" placeholder="Write your name" required>
+                                
+                            </div>
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Write your email address" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <!-- Phone Number -->
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Write your phone number" required>
+                            </div>
+                            <!-- Address -->
+                            <div class="form-group">
+                                <label for="callProject">What you’re looking for</label>
+                                <select id="callProject" class="form" required>
+                                    <option value="" selected class="form">Select an option</option>
+                                    <option value="residential" class="form">Residential Landscaping</option>
+                                    <option value="commercial" class="form">Commercial Landscaping</option>
+                                    <option value="maintenance" class="form">Garden Maintenance</option>
+                                    <option value="stonework" class="form">Stonework & Design</option>
+                                    <option value="other" class="form">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary spotlight-btn" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary spotlight-btn">Schedule a call</button>
+                        </div>
+                        
+
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
     
     
 
