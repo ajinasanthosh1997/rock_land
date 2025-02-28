@@ -146,6 +146,9 @@ background-color: rgba(0, 63, 46, 0.1); /* Optional hover effect */
     }
 }
 @media (max-width: 768px) {
+    .gallery-section .port-sec{
+        text-align: center;
+    }
     .gallery-section .col-md-4 {
         float: none;
         margin-left: auto;
