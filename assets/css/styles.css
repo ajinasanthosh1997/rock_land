@@ -951,9 +951,9 @@ body {
 }
 @media only screen and (max-width: 1179px) and (max-height: 2556px) {
     .play-btn {
-        left: 45%; /* Adjust value as needed */
-        -webkit-transform: translate(-45%, -50%);
-        transform: translate(-45%, -50%);
+        left: 47%; /* Adjust value as needed */
+        -webkit-transform: translate(-47%, -50%);
+        transform: translate(-47%, -50%);
         
     }
 }
