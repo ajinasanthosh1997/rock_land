@@ -93,12 +93,62 @@ textarea {
     color:#003F2E;
 
 }
+.spotlight1 {
+    position: relative;
+    text-align: center;
+    padding: 0px 0;
+    padding-bottom: 3rem;
+}
+.port-icon{
+    padding: 1rem 0;
+}
+.port-sec{
+    background-color: #F5F6EF;
+    color: #003F2E;
+    text-align: left;
+    padding: 1rem 27rem
+}
+.port-sec1{
+    background-color: #F5F6EF;
+    color: #003F2E;
+    text-align: left;
+    padding: 1rem 27rem
+}
+.port-section-text {
+    font-size: 1rem;
+    padding: 0rem 0rem;
+}
+.port-pad1 {
+    padding: 0 18rem;
+}
+
 @media (max-width: 600px) {
     .form-row {
         flex-direction: column;
     }
 }
 @media (max-width: 768px) {
+    .gallery-section .col-md-4 {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center !important;
+        padding-top:1.5rem;
+
+      }
+    .port-sec1{
+        background-color: #F5F6EF;
+        color: #003F2E;
+        text-align: center;
+        padding: 1rem 27rem
+    }
+    .port-sec {
+        
+        padding: 0rem 1rem;
+    }
+    .port-pad1 {
+        padding: 0 0rem;
+    }
     .short-card {
         align-items: flex-start;
         
