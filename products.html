@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Land</title>
+    
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/product.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon//site.webmanifest">
+   
+</head>
+<body>
+    
+
+     
+
+    <!-- Sidebar Toggle Button (Visible on Mobile) -->
+
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+        <!-- <img src="assets/img/GRADIENT TOP RIGHT.png" class="sidebar-vector-top"> -->
+        
+        <a class="navbar-brand" href="#"><img src="assets/img/20240406_172737 2.png" class="nav-img" alt=""></a>
+        <a class="sidenav-link" href="index.html">Home</a>
+        <a class="sidenav-link" href="about.html">About</a>
+        <a class="sidenav-link" href="#">Service</a>
+        <a class="sidenav-link" href="portfolio.html">Portfolio</a>
+        <a class="sidenav-link" href="contact.html">Contact</a>
+        <a class="sidenav-link"href="events.html">Events</a>
+        <span class="close-btn" onclick="closeSidebar()">×</span>
+        <!-- <img src="assets/img/GRADIENT BOTTOM LEFT.png" class="sidebar-vector-bottom"> -->
+    </div>
+
+
+
+    <!-- Navbar -->
+    <header>
+        <div class="header-container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <!-- Sidebar Toggle Button -->
+                    <button class="sidebar-toggle" onclick="openSidebar()">☰</button>
+                    
+                    <a class="navbar-brand" href="index.html"><img src="assets/img/20240406_172737 2.png" class="nav-img" alt=""></a>
+                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
+                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <img src="assets/img/GRADIENT TOP RIGHT.png" class="header-vector" alt="Gradient Vector">
+    </header>
+    <section class="spotlight1">
+        <div class="container">
+            <!-- Vector Image -->
+            <img src="assets/img/GRADIENT TOP LEFT.png" alt="Decorative Vector" class="spot-vector d-none d-lg-block">
+    
+            <!-- Content -->
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <p class="section-title">PRODUCTS</p>
+                    <h1 class="spot-title">Join Our Exclusive Landscaping Experiences</h1>
+                    
+                </div>
+                 <!-- Portfolio Grid -->
+            </div>
+        </div>
+    </section>
+    <section class="product-page py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Left Filter Section -->
+                <div class="col-lg-3 ">
+                    <div class="filter-section">
+                        <h4>Category</h4>
+                        <form id="filterForm">
+                            <!-- Collapsible Category: Paving Stone -->
+                            <div class="category-item mb-3 d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" id="catPaving">
+                                <button type="button" class="category-toggle btn d-flex justify-content-between w-100 p-0 text-start" data-bs-toggle="collapse" data-bs-target="#pavingSub" aria-expanded="false">
+                                    <span>Paving stone</span>
+                                    <span>+</span>
+                                </button>
+                            </div>
+                            <div id="pavingSub" class="collapse subcategory-list ps-2">
+                                <div class="subcategory-item">Natural</div>
+                                <div class="subcategory-item">Artificial</div>
+                            </div>
+                          
+                            <!-- Pebbles -->
+                            <div class="category-item mb-3 d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" id="catPebbles">
+                                <button type="button" class="category-toggle btn d-flex justify-content-between w-100 p-0 text-start" data-bs-toggle="collapse" data-bs-target="#pebblesSub" aria-expanded="false">
+                                    <span>Pebbles</span>
+                                    <span>+</span>
+                                </button>
+                            </div>
+                            <div id="pebblesSub" class="collapse subcategory-list ps-2">
+                                <div class="subcategory-item">Natural</div>
+                                <div class="subcategory-item">Artificial</div>
+                            </div>
+                          
+                            <!-- Grass -->
+                            <div class="category-item mb-3 d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" id="catGrass">
+                                <button type="button" class="category-toggle btn d-flex justify-content-between w-100 p-0 text-start" data-bs-toggle="collapse" data-bs-target="#grassSub" aria-expanded="false">
+                                    <span>Grass</span>
+                                    <span>+</span>
+                                </button>
+                            </div>
+                            <div id="grassSub" class="collapse subcategory-list ps-2">
+                                <div class="subcategory-item">Natural</div>
+                                <div class="subcategory-item">Artificial</div>
+                            </div>
+                          
+                            <!-- Wall Cladding (No subcategories) -->
+                            <div class="category-item mb-3 d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" id="catWallCladding">
+                                <label class="cat form-check-label w-100 d-flex justify-content-between" for="catWallCladding">
+                                    <span>Wall cladding</span>
+                                </label>
+                            </div>
+                          
+                            <!-- Plants -->
+                            <div class="category-item mb-3 d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" id="catPlants">
+                                <button type="button" class="category-toggle btn d-flex justify-content-between w-100 p-0 text-start" data-bs-toggle="collapse" data-bs-target="#plantsSub" aria-expanded="false">
+                                    <span>Plants</span>
+                                    <span>+</span>
+                                </button>
+                            </div>
+                            <div id="plantsSub" class="collapse subcategory-list ps-2">
+                                <div class="subcategory-item">Natural</div>
+                                <div class="subcategory-item">Artificial</div>
+                            </div>
+                          
+                            <!-- Pots -->
+                            <div class="category-item mb-3 d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" id="catPots">
+                                <label class="cat form-check-label w-100 d-flex justify-content-between" for="catPots">
+                                    <span>Pots</span>
+                                </label>
+                            </div>
+                          
+                            <!-- Carpets -->
+                            <div class="category-item mb-3 d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" id="catCarpets">
+                                <label class="cat form-check-label w-100 d-flex justify-content-between" for="catCarpets">
+                                    <span>Carpets</span>
+                                </label>
+                            </div>
+                          
+                            <!-- Curtains -->
+                            <div class="category-item mb-3 d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" id="catCurtains">
+                                <label class="cat form-check-label w-100 d-flex justify-content-between" for="catCurtains">
+                                    <span>Curtains</span>
+                                </label>
+                            </div>
+                        </form>
+                          
+                          
+                        
+                        <h4>Filter by price</h4>
+                        <div class="price-filter">
+                            <div id="priceDisplay">₹0 - ₹1000</div>
+                            <input type="range" id="priceSlider" min="0" max="4000" step="100" value="1000">
+                            
+                        </div>
+                    </div>
+                </div>
+                  
+    
+                <!-- Right Product Display Section -->
+                <div class="col-lg-9 prod-pad">
+                    <div class="product-header d-flex justify-content-between align-items-center mb-4">
+                        <div class="results">
+                            <p class="mb-0">Showing 1 - 15 of 25 results</p>
+                        </div>
+                        <div class="sort-by d-flex justify-content-between align-items-center">
+                            <p class="mb-0">Sort by </p>
+                            <select class="form-select" id="sortBy">
+                                <option value="latest" selected>Latest</option>
+                                <option value="priceLowToHigh">Low to High</option>
+                                <option value="priceHighToLow">High to Low</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row product-grid">
+                        <!-- Example Product Card -->
+                        <div class="col-md-4 mb-4">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="assets/img/product1.png" alt="Product 1" class="img-fluid">
+                                    <div class="overlay">
+                                        <a href="#" class="btn btn-primary spotlight-btn" data-bs-toggle="modal" data-bs-target="#scheduleCallModal">
+                                            Enquire Now
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="product-name">Granite Elite Paver</h5>
+                                    <p class="product-price">₹250 / piece</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repeat similar product cards -->
+                        <div class="col-md-4 mb-4">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="assets/img/product2.png" alt="Product 2" class="img-fluid">
+                                    <div class="overlay">
+                                        <a href="#" class="btn btn-primary spotlight-btn" data-bs-toggle="modal" data-bs-target="#scheduleCallModal">
+                                            Enquire Now
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="product-name">Rustic River Stone</h5>
+                                    <p class="product-price">₹300 / scoop</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="assets/img/product3.png" alt="Product 3" class="img-fluid">
+                                    <div class="overlay">
+                                        <a href="#" class="btn btn-primary spotlight-btn" data-bs-toggle="modal" data-bs-target="#scheduleCallModal">
+                                            Enquire Now
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="product-name">Urban Slate Paver</h5>
+                                    <p class="product-price">₹280 / piece</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="assets/img/product4.png" alt="Product 1" class="img-fluid">
+                                    <div class="overlay">
+                                        <a href="#" class="btn btn-primary spotlight-btn" data-bs-toggle="modal" data-bs-target="#scheduleCallModal">
+                                            Enquire Now
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="product-name">Heritage Sandstone Tile</h5>
+                                    <p class="product-price">₹320 / piece</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="assets/img/product5.png" alt="Product 2" class="img-fluid">
+                                    <div class="overlay">
+                                        <a href="#" class="btn btn-primary spotlight-btn" data-bs-toggle="modal" data-bs-target="#scheduleCallModal">
+                                            Enquire Now
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="product-name">Eco-Crest Basalt Paver</h5>
+                                    <p class="product-price">₹260 / piece</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="assets/img/product6.png" alt="Product 3" class="img-fluid">
+                                    <div class="overlay">
+                                        <a href="#" class="btn btn-primary spotlight-btn" data-bs-toggle="modal" data-bs-target="#scheduleCallModal">
+                                            Enquire Now
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="product-name">Classic Limestone Block</h5>
+                                    <p class="product-price">₹270 / piece</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="assets/img/product7.png" alt="Product 1" class="img-fluid">
+                                    <div class="overlay">
+                                        <a href="#" class="btn btn-primary spotlight-btn" data-bs-toggle="modal" data-bs-target="#scheduleCallModal">
+                                            Enquire Now
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="product-name">Urban Slate Paver</h5>
+                                    <p class="product-price">₹280 / piece</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repeat similar product cards -->
+                        <div class="col-md-4 mb-4">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="assets/img/product8.png" alt="Product 2" class="img-fluid">
+                                    <div class="overlay">
+                                        <a href="#" class="btn btn-primary spotlight-btn" data-bs-toggle="modal" data-bs-target="#scheduleCallModal">
+                                            Enquire Now
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="product-name">Natural Terra Cotta Paver</h5>
+                                    <p class="product-price">₹290 / piece</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="assets/img/product9.png" alt="Product 3" class="img-fluid">
+                                    <div class="overlay">
+                                        <a href="#" class="btn btn-primary spotlight-btn" data-bs-toggle="modal" data-bs-target="#scheduleCallModal">
+                                            Enquire Now
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="product-name">Modern Pebble Paver</h5>
+                                    <p class="product-price">₹310 / piece</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="assets/img/product10.png" alt="Product 1" class="img-fluid">
+                                    <div class="overlay">
+                                        <a href="#" class="btn btn-primary spotlight-btn" data-bs-toggle="modal" data-bs-target="#scheduleCallModal">
+                                            Enquire Now
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="product-name">Eco-Crest Basalt Paver</h5>
+                                    <p class="product-price">₹260 / piece</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="assets/img/product11.png" alt="Product 2" class="img-fluid">
+                                    <div class="overlay">
+                                        <a href="#" class="btn btn-primary spotlight-btn" data-bs-toggle="modal" data-bs-target="#scheduleCallModal">
+                                            Enquire Now
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="product-name">Elegant Quartzite Slab</h5>
+                                    <p class="product-price">₹350 / piece</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="assets/img/product12.png" alt="Product 3" class="img-fluid">
+                                    <div class="overlay">
+                                        <a href="#" class="btn btn-primary spotlight-btn" data-bs-toggle="modal" data-bs-target="#scheduleCallModal">
+                                            Enquire Now
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="product-name">Classic Limestone Block</h5>
+                                    <p class="product-price">₹270 / piece</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="assets/img/product13.png" alt="Product 1" class="img-fluid">
+                                    <div class="overlay">
+                                        <a href="#" class="btn btn-primary spotlight-btn" data-bs-toggle="modal" data-bs-target="#scheduleCallModal">
+                                            Enquire Now
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="product-name">Elegant Quartzite Slab</h5>
+                                    <p class="product-price">₹350 / piece</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="assets/img/product14.png" alt="Product 2" class="img-fluid">
+                                    <div class="overlay">
+                                        <a href="#" class="btn btn-primary spotlight-btn" data-bs-toggle="modal" data-bs-target="#scheduleCallModal">
+                                            Enquire Now
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="product-name">Artisan Granite Mosaic</h5>
+                                    <p class="product-price">₹400 / piece</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="assets/img/product15.png" alt="Product 3" class="img-fluid">
+                                    <div class="overlay">
+                                        <a href="#" class="btn btn-primary spotlight-btn" data-bs-toggle="modal" data-bs-target="#scheduleCallModal">
+                                            Enquire Now
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="product-name">Rustic River Stone</h5>
+                                    <p class="product-price">₹300 / scoop</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination (optional) -->
+                    <nav aria-label="Product Pagination">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&#8249;</span>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&#8250;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade py-4" id="scheduleCallModal" tabindex="-1" aria-labelledby="scheduleCallModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modalheader">
+                    <h3 class="section-subtitle" id="scheduleCallModalLabel">Let's schedule your call</h3>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <p>Connect with our experts to kickstart your dream outdoor project.</p>
+                    <form id="scheduleCallForm">
+                        <div class="">
+                            <!-- Name -->
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="callName" placeholder="Write your name" required>
+                                
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Write your phone number" required>
+                            </div>
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Write your email address" required>
+                            </div>
+                        </div>
+                        
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary spotlight-btn" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary spotlight-btn">Enquire Now</button>
+                        </div>
+                        
+
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container ">
+            <div class="row">
+                <!-- Logo & Vector Image Section -->
+                <div class="col-md-3 position-relative text-center">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/20240406_172737 2.png" class="nav-img" alt="Logo">
+                    </a>
+                
+                    <!-- Social Media Icons (Images) -->
+                    <div class="social-icons mt-3">
+                       
+                        <a href="https://www.facebook.com/rock.land.33?mibextid=qi2Omg&rdid=Gc7xAQL6J9Oy2PxW&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FZ3kxhAoDuTYsVhMz%2F%3Fmibextid%3Dqi2Omg#" target="_blank">
+                            <img src="assets/img/icon-1.png" alt="Facebook" class="social-icon">
+                        </a>
+                        <a href="https://twitter.com/" target="_blank">
+                            <img src="assets/img/ICON-2.png" alt="Twitter" class="social-icon">
+                        </a>
+                        <a href="https://www.instagram.com/rocklandlandscaping?igsh=MTFnbjl5NHI2a2FrYw%3D%3D" target="_blank">
+                            <img src="assets/img/ICON-3.png" alt="Instagram" class="social-icon">
+                        </a>
+                        <a href="https://www.youtube.com/@ROCKland-landscaping" target="_blank">
+                            <img src="assets/img/ICON (3).png" alt="YouTube" class="social-icon">
+                        </a>
+                        
+                    </div>
+                
+                    <!-- Decorative Vector -->
+                    <img src="assets/img/GRADIENT BOTTOM LEFT.png" class="footer-vector" alt="Decorative Vector">
+                </div>
+                
+    
+                <!-- Address Section -->
+                <div class="col-md-3 py-3">
+                    <h5>ADDRESS</h5>
+                    <p>Rockland,Kilimanoor,<br>Thiruvananthapuram</p>
+                    <p>
+                        Phone: 
+                        <a href="tel:+917510777766" class="hover">+91 7510777766</a><br>
+                        <a href="tel:+918358882888" class="hover">+91 83588 82888</a>
+                      </p>
+                      <p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mail@rockland.co.in" class="hover" target="_blank">mail@rockland.co.in</a></p>
+
+                </div>
+    
+                <!-- Navigation Section -->
+                <div class="col-md-3">
+                    <h5>NAVIGATION</h5>
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>OUR SERVICES</h5>
+                    <ul class="footer-nav">
+                        <li><a href="#">Complete Home Decor Solutions</a></li>
+                        <li><a href="#">Paving Stone Production</a></li>
+                        <li><a href="#">Comprehensive Landscaping Works</a></li>
+                        <li><a href="#">Supply of Landscaping Materials</a></li>
+                        <li><a href="#">Eco-Friendly Landscaping Solutions</a></li>
+                        <li><a href="#">Commercial and Public Landscaping</a></li>
+                        <li><a href="#">Residential Landscaping</a></li>
+                        <li><a href="#">Seasonal Planting and Maintenance</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container pad4">
+            <div class="d-flex justify-content-between align-items-center flex-wrap text-center">
+                <!-- Left Side: Copyright -->
+                <p class="mb-0">&copy; 2025 Rock Land Services. All rights reserved.</p>
+    
+                <!-- Right Side: Links -->
+                <div class="footer-links  pad5">
+                    <a href="#" class="footer-link">Privacy Policy</a> &nbsp;&nbsp;&nbsp;
+                    <a href="#" class="footer-link">Terms and Conditions</a>
+                </div>
+                  
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript for Sidebar -->
+    <script>
+        function openSidebar() {
+            document.getElementById("sidebar").style.left = "0";
+        }
+
+        function closeSidebar() {
+            document.getElementById("sidebar").style.left = "-1000px";
+        }
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const faqItems = document.querySelectorAll(".faq-item");
+
+            faqItems.forEach((item) => {
+                const question = item.querySelector(".faq-question");
+                const icon = item.querySelector(".faq-icon");
+
+                question.addEventListener("click", () => {
+                    item.classList.toggle("active");
+                    icon.textContent = item.classList.contains("active") ? "−" : "+";
+                });
+            });
+        });
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const slider = document.getElementById("priceSlider");
+            const display = document.getElementById("priceDisplay");
+          
+            // Function to update slider background and display text
+            function updateSlider() {
+              let value = slider.value;
+              let min = slider.min ? slider.min : 0;
+              let max = slider.max ? slider.max : 100;
+              let percentage = ((value - min) * 100) / (max - min);
+              
+              // Update the slider background: fill from left up to the thumb with #003F2E
+              slider.style.background = `linear-gradient(to right, #003F2E 0%, #003F2E ${percentage}%, #ddd ${percentage}%, #ddd 100%)`;
+              
+              // Update displayed price range text
+              display.innerText = `₹0 - ₹${value}`;
+            }
+          
+            // Update on input
+            slider.addEventListener("input", updateSlider);
+          
+            // Trigger the update on page load
+            updateSlider();
+          });
+          
+          
+    </script>
+
+
+</body>
+</html>

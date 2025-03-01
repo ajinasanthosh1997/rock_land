@@ -195,6 +195,12 @@ background-color: rgba(0, 63, 46, 0.1); /* Optional hover effect */
     padding: 0 3rem;
 }
   
+.event-title {
+    font-size: 3.6rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0rem 1rem;
+}
 
 @media (max-width: 600px) {
     .form-row {

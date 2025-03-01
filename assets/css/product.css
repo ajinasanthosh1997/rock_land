@@ -1,0 +1,260 @@
+.filter-section {
+    /* background: #f9f9f9; */
+    padding: 1rem;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  
+  .filter-section h4 {
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+    margin-top: 2rem;
+    color: #003F2E;
+    font-weight: 600;
+  }
+  .filter-section h4:hover{
+    color:#003F2E ;
+  }
+  
+  .category-item {
+    /* spacing and alignment */
+    margin-bottom: 1rem;
+    
+  }
+  .category-item input[type="checkbox"]{
+    background-color: transparent;
+    color: #003F2E;
+    border: 1px solid #003F2E;
+    height: 1rem;
+    width: 1rem;
+    padding: 0;
+  }
+  .cat{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #003F2E;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+  }
+  
+  .category-toggle {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #003F2E;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .subcategory-list {
+    margin-left: 1rem;
+    margin-top: 0;
+    padding-left: 0;
+    font-size: 0.95rem;
+    color: #003F2E;
+    cursor: pointer;
+  }
+  .subcategory-list h4:hover{
+    color:#003F2E ;
+    font-weight: 600;
+  }
+  
+  .subcategory-item {
+    margin-bottom: 0.5rem;
+  }
+  
+  
+  .form-check {
+    margin-bottom: 0.5rem;
+    height: .4rem;
+  }
+  
+  
+  .price-filter {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem auto;
+  }
+  
+  .price-filter input{
+    padding: 0;
+  }
+  #priceSlider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 3px;
+    background: #ddd;
+    outline: none;
+    border-radius: 5px;
+    margin: 0;
+  }
+  
+  /* Slider Thumb Styling for WebKit (Chrome, Safari) */
+  #priceSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #003F2E;
+    cursor: pointer;
+    border: none;
+  }
+  
+  /* Slider Thumb Styling for Firefox */
+  #priceSlider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #003F2E;
+    cursor: pointer;
+    border: none;
+  }
+  
+  #priceDisplay {
+    margin:1rem 0rem;
+    /* font-weight: bold; */
+    font-size: .8rem;
+    color: #003F2E;
+    text-align: left;
+  }
+  
+  /* ------------------ Product Header ------------------ */
+  .product-header {
+    margin-bottom: 1.5rem;
+  }
+  .product-header .results {
+    font-size: 1rem;
+    /* color: #555; */
+  }
+  .results p{
+    border: none;
+    background-color: transparent;
+    color: #003F2E;
+    font-size: 1rem;
+
+  }
+  
+  /* ------------------ Product Card ------------------ */
+  .product-card {
+    background: #FFFFFF;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    margin-bottom: 1.5rem;
+  }
+  .product-card:hover {
+    /* transform: translateY(-5px); */
+  }
+  .product-image {
+    position: relative;
+  }
+  .product-image img {
+    width: 100%;
+    display: block;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 63, 46, 0.6); */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    padding-left: 1rem;
+    align-items:flex-end;
+  }
+  .product-card:hover .overlay {
+    opacity: 1;
+  }
+  .enquire-btn {
+    background: #BCFF83;
+    color: #003F2E;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .prod-pad{
+    padding:1rem 2rem;
+  }
+  .product-info {
+    padding: 1rem;
+    text-align: left;
+  }
+  .product-name {
+    font-size: 1.1rem;
+    color: #003F2E;
+    margin-bottom: 0.5rem;
+  }
+  .product-price {
+    font-size: 1rem;
+    color: #003F2E;
+  }
+  
+  /* ------------------ Pagination (if needed) ------------------ */
+  .pagination {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .pagination .page-link {
+    border: none;
+    color: #003F2E;
+    background: none;
+    /* font-weight: 600; */
+  }
+  .pagination .page-item.active .page-link {
+    background-color: #92F231;
+    color: #003F2E;
+  }
+  .pagination .page-link:hover {
+    background-color: rgba(0,63,46,0.1);
+  }
+
+  .sort-by select{
+    border: none;
+    background-color: transparent;
+    color: #003F2E;
+    font-size: 1rem;
+    font-weight: 600;
+    
+  }
+  .sort-by p{
+    border: none;
+    background-color: transparent;
+    color: #003F2E;
+    font-size: 1rem;
+    /* font-weight: 600; */
+
+  }
+  .sort-by select:focus {
+    outline: none;
+    box-shadow: none;
+
+  }
+  .product-header .sort-by select {
+    max-width: 100px;
+}
+  
+  
+  /* ------------------ Responsive Adjustments ------------------ */
+  @media (max-width: 768px) {
+    /* Stack filter section on top */
+    .filter-section {
+      margin-bottom: 1.5rem;
+    }
+    /* Adjust product header to center on mobile */
+    .product-header {
+      text-align: center;
+    }
+  }
