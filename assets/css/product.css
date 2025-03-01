@@ -229,6 +229,14 @@
     font-weight: 600;
     
   }
+  .sort-by option{
+    border: none;
+    background-color: transparent;
+    color: #003F2E;
+    font-size: .8rem;
+    font-weight: 600;
+    
+  }
   .sort-by p{
     border: none;
     background-color: transparent;
