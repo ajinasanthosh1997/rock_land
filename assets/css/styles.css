@@ -139,8 +139,6 @@ body {
     margin-bottom: 1rem;
 }
 
-
-
 .video-thumbnail {
     width: 75%; /* Adjust width */
     height: 400px; /* Fixed height */
@@ -156,10 +154,6 @@ body {
     display: inline-block;
     text-align: center;
 }
-
-
-
-
 
 /* Sidebar Toggle Button */
 .sidebar-toggle {
@@ -260,8 +254,6 @@ body {
 .pad1 {
     padding: 0 8rem;
 }
-
-
 /* Button */
 .spotlight-btn {
     font-size: .8rem;
