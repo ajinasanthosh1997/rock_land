@@ -73,7 +73,7 @@
         </div>
         <img src="assets/img/GRADIENT TOP RIGHT.png" class="header-vector" alt="Gradient Vector">
     </header>
-    <section class="spotlight">
+    <section class="spotlight" id="spotlight">
         <div class="container">
             <!-- Vector Image -->
             <img src="assets/img/GRADIENT TOP LEFT.png" alt="Decorative Vector" class="spotlight-vector d-none d-lg-block">
@@ -150,7 +150,7 @@
             <div class="row justify-content-center mt-4">
                 <div class="col-md-10">
                     <div class="spotlight-video">
-                        <video id="videoPlayer" class="d-none">
+                        <video id="videoPlayer" class="d-none" muted>
                             <source src="assets/video/videoplayback.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -165,7 +165,7 @@
             
         </div>
     </section>
-    <section class="what-we-do py-3">
+    <section class="what-we-do py-3" id="what-we-do">
         <div class="container text-center">
             <p class="section-title">WHAT WE DO</p>
             <h2 class="section-subtitle">Sculpting Your Perfect Outdoor Oasis</h2>
@@ -605,28 +605,43 @@
         });
     </script>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const playButtons = document.querySelectorAll(".play-btn");
-        
-            playButtons.forEach(button => {
-                button.addEventListener("click", function () {
-                    const wrapper = button.parentElement;
-                    const videoUrl = wrapper.getAttribute("data-video") + "&autoplay=1";
-                    const iframe = document.createElement("iframe");
-                    iframe.setAttribute("src", videoUrl);
-                    iframe.setAttribute("frameborder", "0");
-                    iframe.setAttribute("allowfullscreen", "true");
-                    iframe.setAttribute("allow", "autoplay"); // Allow autoplay
-                    iframe.classList.add("shorts-video");
-        
-                    // Replace the thumbnail and play button with the video iframe
-                    wrapper.innerHTML = "";
-                    wrapper.appendChild(iframe);
-                });
+        document.addEventListener('DOMContentLoaded', function() {
+            const videoPlayer = document.getElementById('videoPlayer');
+            const videoThumbnail = document.getElementById('videoThumbnail');
+            const playButton = document.getElementById('playButton');
+            const whatWeDoSection = document.getElementById('what-we-do');
+    
+            // Function to check if the element is in the viewport
+            function isInViewport(element) {
+                const rect = element.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+    
+            // Function to handle the scroll event
+            function handleScroll() {
+                if (isInViewport(whatWeDoSection)) {
+                    videoPlayer.classList.remove('d-none');
+                    videoThumbnail.classList.add('d-none');
+                    videoPlayer.play();
+                    window.removeEventListener('scroll', handleScroll); // Remove the event listener after playing the video
+                }
+            }
+    
+            // Add the scroll event listener
+            window.addEventListener('scroll', handleScroll);
+    
+            // Optional: Play the video when the play button is clicked
+            playButton.addEventListener('click', function() {
+                videoPlayer.classList.remove('d-none');
+                videoThumbnail.classList.add('d-none');
+                videoPlayer.play();
             });
         });
-        
-        
     </script>
 
 

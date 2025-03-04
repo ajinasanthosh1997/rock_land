@@ -266,6 +266,14 @@ margin: 0;
 .event-gallery a{
     text-decoration: none;
 }
+.form1 {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #98D0DC;
+    border-radius: 0.5rem;
+    font-size: .8rem;
+    color: #2D746D;
+}
 
 @media (max-width: 600px) {
     .form-row {

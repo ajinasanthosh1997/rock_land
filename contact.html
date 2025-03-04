@@ -143,6 +143,7 @@
 
         </div>
         <div class="container py-5">
+            
             <form action="#" method="POST" class="contact-form">
                 <div class="form-row">
                     <!-- Name -->
@@ -165,19 +166,21 @@
                     </div>
                     <!-- Address -->
                     <div class="form-group">
-                        <label for="address">Address</label>
-                        <input type="text" id="address" name="address" placeholder="Write your street address, zipcode, etc" required>
+                        <label for="callProject">What you’re looking for</label>
+                        <select id="callProject" class="form1" required>
+                            <option value="" selected class="form1">Select an option</option>
+                            <option value="residential" class="form1">Residential Landscaping</option>
+                            <option value="commercial" class="form1">Commercial Landscaping</option>
+                            <option value="maintenance" class="form1">Garden Maintenance</option>
+                            <option value="stonework" class="form1">Stonework & Design</option>
+                            <option value="other" class="form1">Other</option>
+                        </select>
                     </div>
                 </div>
-    
-                <!-- Notes -->
-                <div class="form-group">
-                    <label for="notes">Notes</label>
-                    <textarea id="notes" name="notes" placeholder="Type here"></textarea>
-                </div>
+                
     
                 <!-- Submit Button -->
-                <button type="submit" class="btn btn-primary learn-more-btn">Send Message</button>
+                <button type="button" class="btn btn-primary spotlight-btn bt1">Schedule a call</button>
             </form>
         </div>
     </section>
