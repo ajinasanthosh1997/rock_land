@@ -323,60 +323,51 @@
         <div class="container">
             <p class="section-title">SOCIAL MEDIA</p>
             <h2 class="section-subtitle1">Vertical Vibes</h2>
-
             <!-- Owl Carousel Wrapper -->
             <div class="owl-carousel shorts-carousel pad2">
                 <!-- Short 1 -->
                 <div class="short-card">
-                    <div class="video-wrapper" data-video="https://www.youtube.com/embed/Z_4yBu64K7c?">
+                    <div class="video-wrapper video-thumbnail" data-video="https://www.youtube.com/embed/Z_4yBu64K7c?">
                         <img src="assets/img/image.jpg" alt="Thumbnail" class="video-thumbnail">
-                        <button class="play-btn">▶</button>
+                        <button class="play-btn1">▶</button>
                     </div>
                     <p class="short-description">Backyard transformation with a pool, fire pit, landscaping & more</p>
                 </div>
-            
                 <!-- Short 2 -->
                 <div class="short-card">
                     <div class="video-wrapper" data-video="https://www.youtube.com/embed/kJTKEOi-tOQ?">
                         <img src="assets/img/image21.jpg" alt="Thumbnail" class="video-thumbnail">
-                        <button class="play-btn">▶</button>
+                        <button class="play-btn1">▶</button>
                     </div>
                     <p class="short-description">Backyard transformation with a pool, fire pit, landscaping & more</p>
                 </div>
-            
                 <!-- Short 3 -->
                 <div class="short-card">
                     <div class="video-wrapper" data-video="https://www.youtube.com/embed/AaWSuPO7mNM?">
                         <img src="assets/img/image22.jpg" alt="Thumbnail" class="video-thumbnail">
-                        <button class="play-btn">▶</button>
+                        <button class="play-btn1">▶</button>
                     </div>
                     <p class="short-description">Backyard transformation with a pool, fire pit, landscaping & more</p>
                 </div>
-            
                 <!-- Short 4 -->
                 <div class="short-card">
-                    <div class="video-wrapper" data-video="https://www.youtube.com/embed/IpdCy8uM97Q?">
+                    <div class="video-wrapper video-thumbnail" data-video="https://www.youtube.com/embed/IpdCy8uM97Q?">
                         <img src="assets/img/image23.jpg" alt="Thumbnail" class="video-thumbnail">
-                        <button class="play-btn">▶</button>
+                        <button class="play-btn1">▶</button>
                     </div>
                     <p class="short-description">Backyard transformation with a pool, fire pit, landscaping & more</p>
                 </div>
-            
+                <!-- Short 5 -->
                 <div class="short-card">
                     <div class="video-wrapper" data-video="https://www.youtube.com/embed/AaWSuPO7mNM?">
                         <img src="assets/img/image22.jpg" alt="Thumbnail" class="video-thumbnail">
-                        <button class="play-btn">▶</button>
+                        <button class="play-btn1">▶</button>
                     </div>
                     <p class="short-description">Backyard transformation with a pool, fire pit, landscaping & more</p>
                 </div>
             </div>
-            
         </div>
     </section>
-
-
-    
-
     <section class="what-we-do py-4">
         <div class="container text-center">
             <p class="section-title">FREQUENTLY ASKED QUESTIONS</p>
@@ -588,22 +579,35 @@
         });
 
     </script>
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const videoPlayer = document.getElementById("videoPlayer");
-            const videoThumbnail = document.getElementById("videoThumbnail");
-            const playButton = document.getElementById("playButton");
-    
-            playButton.addEventListener("click", function () {
-                // Hide the thumbnail and show the video
-                videoThumbnail.style.display = "none";
-                videoPlayer.classList.remove("d-none");
-    
-                // Play the video
-                videoPlayer.play();
+            const playButtons = document.querySelectorAll(".play-btn1");
+          
+            playButtons.forEach(function (button) {
+              button.addEventListener("click", function () {
+                const wrapper = button.parentElement;
+                const baseVideoUrl = wrapper.getAttribute("data-video");
+                // Append autoplay and mute parameters. Mute is required for autoplay on most browsers.
+                const videoUrl = baseVideoUrl + "autoplay=1&mute=1";
+                
+                // Create an iframe element with the video URL
+                const iframe = document.createElement("iframe");
+                iframe.setAttribute("src", videoUrl);
+                iframe.setAttribute("frameborder", "0");
+                iframe.setAttribute("allowfullscreen", "true");
+                iframe.setAttribute("allow", "autoplay; encrypted-media");
+                iframe.classList.add("shorts-video");
+          
+                // Replace the wrapper content (thumbnail and button) with the video iframe
+                wrapper.innerHTML = "";
+                wrapper.appendChild(iframe);
+              });
             });
-        });
+          });
+          
     </script>
+    
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const videoPlayer = document.getElementById('videoPlayer');

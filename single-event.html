@@ -83,14 +83,16 @@
                 <div class="col-lg-8 text-center">
                     
                     <h1 class="spot-title">Garden Design Workshop</h1>
-                    <div class="event-pad">
-                        <p class="sec1-title mt-3 align-items-center justify-content-center">SATURDAY, FEB 20, 2025 AT 11:20 PM</p>
-                    </div>
+
+                    <p class="sec1-title mt-3 ">SATURDAY, FEB 20, 2025 AT 11:20 PM</p>
                     
                     <p class="spot-text">
                         Learn the secrets of creating a stunning outdoor oasis. Join our experts for an interactive session where creativity meets sustainability.
                     </p>
-                    <a href="#" class="btn btn-primary spotlight-btn mt-4">Register Now</a>
+                    <a href="#" class="btn btn-primary spotlight-btn" data-bs-toggle="modal" data-bs-target="#scheduleCallModal">
+                        Register Now
+                    </a>
+                  
                 </div>
                  <!-- Portfolio Grid -->
             </div>
@@ -210,6 +212,47 @@
             </div>
         </div>
     </section>
+    <div class="modal fade py-4" id="scheduleCallModal" tabindex="-1" aria-labelledby="scheduleCallModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modalheader">
+                    <h3 class="section-subtitle" id="scheduleCallModalLabel">Register for the Event</h3>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <p>Reserve your seat & discover new ways to transform your space.</p>
+                    <form id="scheduleCallForm">
+                        <div class="">
+                            <!-- Name -->
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="callName" placeholder="Write your name" required>
+                                
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Write your phone number" required>
+                            </div>
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Write your email address" required>
+                            </div>
+                        </div>
+                        
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary spotlight-btn" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary spotlight-btn">Register Now</button>
+                        </div>
+                        
+
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+      
     <footer class="footer">
         <div class="container ">
             <div class="row">

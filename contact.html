@@ -82,7 +82,7 @@
             <img src="assets/img/GRADIENT TOP LEFT.png" alt="Decorative Vector" class="spot-vector d-none d-lg-block">
     
             <!-- Content -->
-            <div class="row align-items-center justify-content-center">
+            <div class="row align-items-center justify-content-center test1">
                 <div class="col-lg-8 text-center">
                     <p class="section-title">CONTACT US</p>
                     <h1 class="spot-title">Get in touch</h1>
@@ -107,7 +107,7 @@
                         <div>
                             <img src="assets/img/Vector (5).png" alt="Step 1" class="icon1">
                             <h4 class="how-title">Office</h4>
-                            <p class="text">Desa bangsal Rt 11 Rw 02<br>Kec Bangsal Kab Mojo<br>kerto Jawa timurI ndonesia 61381</p>
+                            <p class="text">Rockland,Kilimanoor,<br>Thiruvananthapuram</p>
                         </div>
                     </div>
         
@@ -116,7 +116,9 @@
                         <div >
                             <img src="assets/img/Vector (3).png" alt="Step 2" class="icon1">
                             <h4 class="how-title">Phone</h4>
-                            <p class="text">+123456790<br>+123456790</p>
+                            <p class="text"><a href="tel:+917510777766" class="hover">+91 7510777766</a><br><a href="tel:+918358882888" class="hover">+91 83588 82888</a></p>
+                            <br>
+                        
                         </div>
                     </div>
         
@@ -125,7 +127,7 @@
                         <div>
                             <img src="assets/img/Vector (4).png" alt="Step 3" class="icon1">
                             <h4 class="how-title">Location</h4>
-                            <p class="text">hello@yourewebsite.com</p>
+                            <p class="text"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=mail@rockland.co.in" class="hover" target="_blank">mail@rockland.co.in</a></p>
                         </div>
                     </div>
                 </div>
@@ -135,55 +137,55 @@
     </section>
     <section class="what-we-do">
         <div class="container text-center">
-            <p class="section-title">CONTACT FORM</p>
-            <h2 class="section-subtitle">Let's schedule your appointment</h2>
-            <p class="section-text">
-                Feel free to give us a call or send us a message and we'll help get the answers you need, or a quote for services at your residential or commercial property.
-            </p>
-
+          <p class="section-title">CONTACT FORM</p>
+          <h2 class="section-subtitle">Let's schedule your appointment</h2>
+          <p class="section-text">
+            Feel free to give us a call or send us a message and we'll help get the answers you need, or a quote for services at your residential or commercial property.
+          </p>
         </div>
         <div class="container py-5">
+          <form action="#" method="POST" class="contact-form">
+            <div class="form-row">
+              <!-- Name -->
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Write your name" required>
+              </div>
+              <!-- Email -->
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Write your email address" required>
+              </div>
+            </div>
+      
+            <div class="form-row">
+              <!-- Phone Number -->
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Write your phone number" required>
+              </div>
+              <!-- What you're looking for -->
+              <div class="form-group">
+                <label for="callProject">What you’re looking for</label>
+                <select id="callProject" class="form1" required>
+                  <option value="" selected>Select an option</option>
+                  <option value="residential" class="form1">Residential Landscaping</option>
+                  <option value="commercial" class="form1">Commercial Landscaping</option>
+                  <option value="maintenance" class="form1">Garden Maintenance</option>
+                  <option value="stonework" class="form1">Stonework & Design</option>
+                  <option value="other" class="form1">Other</option>
+                </select>
+              </div>
+            </div>
             
-            <form action="#" method="POST" class="contact-form">
-                <div class="form-row">
-                    <!-- Name -->
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Write your name" required>
-                    </div>
-                    <!-- Email -->
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Write your email address" required>
-                    </div>
-                </div>
-    
-                <div class="form-row">
-                    <!-- Phone Number -->
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="Write your phone number" required>
-                    </div>
-                    <!-- Address -->
-                    <div class="form-group">
-                        <label for="callProject">What you’re looking for</label>
-                        <select id="callProject" class="form1" required>
-                            <option value="" selected class="form1">Select an option</option>
-                            <option value="residential" class="form1">Residential Landscaping</option>
-                            <option value="commercial" class="form1">Commercial Landscaping</option>
-                            <option value="maintenance" class="form1">Garden Maintenance</option>
-                            <option value="stonework" class="form1">Stonework & Design</option>
-                            <option value="other" class="form1">Other</option>
-                        </select>
-                    </div>
-                </div>
-                
-    
-                <!-- Submit Button -->
-                <button type="button" class="btn btn-primary spotlight-btn bt1">Schedule a call</button>
-            </form>
+            <!-- Submit Button Container -->
+            <div class="submit-container">
+              <button type="button" class="btn btn-primary spotlight-btn bt1">Schedule a call</button>
+            </div>
+          </form>
         </div>
-    </section>
+      </section>
+      
     <footer class="footer">
         <div class="container ">
             <div class="row">

@@ -292,7 +292,13 @@ body {
     color: #003F2E; /* Greenish text */
     text-align: center;
 }
-
+.test1 a{
+    text-decoration: none;
+    color: #003F2E;
+}
+.test1 a:hover{
+    text-decoration: underline;
+}
 .section-title {
     font-size: .7rem;
     font-weight: 600;
@@ -702,6 +708,25 @@ body {
     box-shadow: none; /* Remove any shadow */
     outline: none; /* Remove outline */
 }
+.play-btn1 {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    color: #FFFFFF;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+    
+    background: none; /* Remove background */
+    box-shadow: none; /* Remove any shadow */
+    outline: none; /* Remove outline */
+}
 
 .thumbnail{
     border-radius: 2rem;
@@ -964,6 +989,9 @@ body {
     }
 }
 @media only screen and (max-width: 1179px) and (max-height: 2556px) {
+    .event-pad {
+        padding: 0rem 12.5rem;
+    }
     .play-btn {
         left: 47%; /* Adjust value as needed */
         -webkit-transform: translate(-47%, -50%);

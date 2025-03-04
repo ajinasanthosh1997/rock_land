@@ -54,6 +54,19 @@
     flex-direction: column;
     padding: 0 12rem;
 }
+.submit-container {
+    text-align: right;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+  
+  /* Style the button to be 25% width and slightly smaller */
+  .bt1 {
+    width: 25%;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    
+  }
 
 .form-row {
     display: flex;
@@ -201,13 +214,14 @@ margin: 0;
     font-weight: 600;
     margin-bottom: 1rem;
     color: #2D746D;
+    display: inline-block;
     border: 1px solid #003F2E;
-    padding: .2rem;
+    padding: .4rem;
     border-radius: 1rem;
     
 }
 .event-pad{
-    padding: 0rem 19.5rem
+    width: 50%;
 }
 
 .event-filter .nav-link1 {
@@ -281,6 +295,9 @@ margin: 0;
     }
 }
 @media (max-width: 768px) {
+    .bt1 {
+        width: 50%;
+    }
     .event-gallery {
         padding: 0 0rem;
     }
