@@ -405,32 +405,37 @@ body {
     text-align: center;
     padding: 2rem 10rem;
     padding-bottom: 2rem;
-}
-
-/* Image Styling */
-.sec-image {
+  }
+  
+  /* Wrap the image in a container without extra padding */
+  .sec-image-wrapper {
+    position: relative;
+    display: inline-block; /* So the wrapper fits the image size */
+    border-radius: 2rem;
+    overflow: hidden; /* Ensure the overlay is clipped to the image shape */
+  }
+  
+  .sec-image {
+    display: block;
     width: 100%;
     height: 22rem;
-    border-radius: 2rem;
     object-fit: cover;
-    display: block;
-}
-
-/* Green Overlay */
-.sec::before {
+  }
+  
+  /* Overlay applied to the image container */
+  .sec-image-wrapper::before {
     content: "";
     position: absolute;
-    top: 31px;
-    left: 159px;
-    width: 79%;
-    height: 22rem;
-    background: rgba(0, 63, 46, 0.6);
-    border-radius: 2rem; /* Match image border-radius */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 63, 46, 0.6); /* Green overlay (#003F2E) with 60% opacity */
     z-index: 1;
-}
-
-/* Overlay Content */
-.sec-content {
+  }
+  
+  /* Content overlay stays above the image & overlay */
+  .sec-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -439,8 +444,19 @@ body {
     text-align: center;
     width: 80%;
     max-width: 600px;
-    z-index: 2; /* Ensure text appears above overlay */
-}
+    z-index: 2;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .sec {
+      padding: 2rem;
+    }
+    .sec-image {
+      height: 18rem;
+    }
+  }
+  
 
 /* Title */
 .sec-title {
@@ -761,6 +777,10 @@ body {
 
 }
 @media only screen and (max-width: 1024px) {
+    .sec-title {
+        font-size: 2rem;
+       
+    }
     .section-text {
         font-size: 1rem;
         padding: 1rem 13rem;
