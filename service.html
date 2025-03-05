@@ -15,17 +15,17 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/product.css">
+    
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon//site.webmanifest">
+    
    
 </head>
 <body>
     
-
-     
 
     <!-- Sidebar Toggle Button (Visible on Mobile) -->
 
@@ -84,132 +84,144 @@
             <!-- Content -->
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <p class="section-title">PRODUCTS</p>
-                    <h1 class="spot-title">Shop Our Signature Collection</h1>
-                    
+                    <h1 class="spot-title">Services</h1>
+                   
                 </div>
                  <!-- Portfolio Grid -->
             </div>
-        </div>
-    </section>
-    <section class="product-page py-5">
-        <div class="container">
-            <div class="row">
-                <!-- Left Filter Section -->
-                <div class="col-lg-3 ">
-                    <div class="filter-section">
-                        <h4>Category</h4>
-                        <form id="filterForm">
-                            <!-- Collapsible Category: Paving Stone -->
-                            <div class="category-item mb-3 d-flex align-items-center">
-                                <input class="form-check-input me-2" type="checkbox" id="catPaving">
-                                <button type="button" class="category-toggle btn d-flex justify-content-between w-100 p-0 text-start" data-bs-toggle="collapse" data-bs-target="#pavingSub" aria-expanded="false">
-                                    <span>Paving stone</span>
-                                    <span>+</span>
-                                </button>
-                            </div>
-                            <div id="pavingSub" class="collapse subcategory-list ps-2">
-                                <div class="subcategory-item">Natural</div>
-                                <div class="subcategory-item">Artificial</div>
-                            </div>
-                          
-                            <!-- Pebbles -->
-                            <div class="category-item mb-3 d-flex align-items-center">
-                                <input class="form-check-input me-2" type="checkbox" id="catPebbles">
-                                <button type="button" class="category-toggle btn d-flex justify-content-between w-100 p-0 text-start" data-bs-toggle="collapse" data-bs-target="#pebblesSub" aria-expanded="false">
-                                    <span>Pebbles</span>
-                                    <span>+</span>
-                                </button>
-                            </div>
-                            <div id="pebblesSub" class="collapse subcategory-list ps-2">
-                                <div class="subcategory-item">Natural</div>
-                                <div class="subcategory-item">Artificial</div>
-                            </div>
-                          
-                            <!-- Grass -->
-                            <div class="category-item mb-3 d-flex">
-                                <input class="form-check-input me-2" type="checkbox" id="catGrass">
-                                <button type="button" class="category-toggle btn d-flex justify-content-between w-100 p-0 text-start" data-bs-toggle="collapse" data-bs-target="#grassSub" aria-expanded="false">
-                                    <span>Grass</span>
-                                    <span>+</span>
-                                </button>
-                            </div>
-                            <div id="grassSub" class="collapse subcategory-list ps-2">
-                                <div class="subcategory-item">Natural</div>
-                                <div class="subcategory-item">Artificial</div>
-                            </div>
-                          
-                            <!-- Wall Cladding (No subcategories) -->
-                            <div class="category-item mb-3 d-flex">
-                                <input class="form-check-input me-2" type="checkbox" id="catWallCladding">
-                                <label class="cat form-check-label w-100 d-flex justify-content-between" for="catWallCladding">
-                                    <span>Wall cladding</span>
-                                </label>
-                            </div>
-                          
-                            <!-- Plants -->
-                            <div class="category-item mb-3 d-flex align-items-center">
-                                <input class="form-check-input me-2" type="checkbox" id="catPlants">
-                                <button type="button" class="category-toggle btn d-flex justify-content-between w-100 p-0 text-start" data-bs-toggle="collapse" data-bs-target="#plantsSub" aria-expanded="false">
-                                    <span>Plants</span>
-                                    <span>+</span>
-                                </button>
-                            </div>
-                            <div id="plantsSub" class="collapse subcategory-list ps-2">
-                                <div class="subcategory-item">Natural</div>
-                                <div class="subcategory-item">Artificial</div>
-                            </div>
-                          
-                            <!-- Pots -->
-                            <div class="category-item mb-3 d-flex">
-                                <input class="form-check-input me-2" type="checkbox" id="catPots">
-                                <label class="cat form-check-label w-100 d-flex justify-content-between" for="catPots">
-                                    <span>Pots</span>
-                                </label>
-                            </div>
-                          
-                            <!-- Carpets -->
-                            <div class="category-item mb-3 d-flex">
-                                <input class="form-check-input me-2" type="checkbox" id="catCarpets">
-                                <label class="cat form-check-label w-100 d-flex justify-content-between" for="catCarpets">
-                                    <span>Carpets</span>
-                                </label>
-                            </div>
-                          
-                            <!-- Curtains -->
-                            <div class="category-item mb-3 d-flex">
-                                <input class="form-check-input me-2" type="checkbox" id="catCurtains">
-                                <label class="cat form-check-label w-100 d-flex justify-content-between" for="catCurtains">
-                                    <span>Curtains</span>
-                                </label>
-                            </div>
-                        </form>
-                          
-                          
-                        
-                        <h4>Filter by price</h4>
-                        <div class="price-filter">
-                            <div id="priceDisplay">₹0 - ₹1000</div>
-                            <input type="range" id="priceSlider" min="0" max="4000" step="100" value="1000">
-                            
-                        </div>
-                    </div>
-                </div>
-                  
-    
-                <!-- Right Product Display Section -->
-                <div class="col-lg-9 prod-pad">
-                    <div class="container text-center mb5">
-                        <img src="assets/img/EmptyState.png" class="img-fluid">
-                        <h2 class="section-subtitle">Let's schedule your appointment</h2>
-                        <p class="">
-                            Our premium selection is being updated. Visit again soon for new arrivals.
-                        </p>
-            
-                    </div>
+            <div class="container mt-5 ">
+                <!-- Block 2: Image on left, Content on right -->
+                <div class="row align-items-center ser-mar">
+                    <div class="col-md-1">
                     
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img src="assets/img/service8.png" alt="Feature 1" class="img-fluid">
+                    </div>
+                    <div class="col-md-5 order-md-2 service-pad1">
+                        <h2 class="feature-title">Complete Home Decor Solutions</h2>
+                        <p class="feature-text">
+                            From indoor to outdoor, we offer comprehensive home decor solutions tailored to your preferences, including furniture, lighting, accessories, and landscaping elements to create harmonious living spaces.
+                        </p>
+                    </div>
                 </div>
+                <!-- Block 1: Content on left, Image on right -->
+                <div class="row align-items-center ser-mar">
+                    <div class="col-md-1">
+                    
+                    </div>
+                    <div class="col-md-5 service-pad1">
+                        <h2 class="feature-title">Paving Stone Production</h2>
+                        <p class="feature-text">
+                            Our state-of-the-art facilities produce high-quality paving stones in various designs, colors, and sizes, suitable for driveways, walkways, patios, and other outdoor areas.
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="assets/img/service1.png" alt="Feature 2" class="img-fluid">
+                    </div>
+                </div>
+                
+                <!-- Block 2: Image on left, Content on right -->
+                <div class="row align-items-center ser-mar">
+                    <div class="col-md-1">
+                    
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img src="assets/img/service.png" alt="Feature 3" class="img-fluid">
+                    </div>
+                    <div class="col-md-5 order-md-2 service-pad1">
+                        <h2 class="feature-title">Comprehensive Landscaping Works</h2>
+                        <p class="feature-text">
+                            Full-service landscaping solutions including design, installation, and maintenance of gardens, lawns, patios, and outdoor living areas.
+                        </p>
+                    </div>
+                </div>
+
+                 <!-- Block 1: Content on left, Image on right -->
+                 <div class="row align-items-center ser-mar">
+                    <div class="col-md-1">
+                    
+                    </div>
+                    <div class="col-md-5 service-pad1">
+                        <h2 class="feature-title">Eco-Friendly Landscaping Solutions</h2>
+                        <p class="feature-text">
+                            Implementation of sustainable practices such as xeriscaping, use of native plants, rainwater harvesting systems, and organic garden care.
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="assets/img/service4.png" alt="Feature 4" class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- Block 2: Image on left, Content on right -->
+                <div class="row align-items-center ser-mar">
+                    <div class="col-md-1">
+                    
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img src="assets/img/service5.png" alt="Feature 5" class="img-fluid">
+                    </div>
+                    <div class="col-md-5 order-md-2 service-pad1">
+                        <h2 class="feature-title">Commercial and Public Landscaping</h2>
+                        <p class="feature-text">
+                            Comprehensive landscaping services for commercial properties, parks, schools, and public spaces.
+                        </p>
+                    </div>
+                </div>
+
+                 <!-- Block 1: Content on left, Image on right -->
+                 <div class="row align-items-center ser-mar">
+                    <div class="col-md-1">
+                    
+                    </div>
+                    <div class="col-md-5 service-pad1">
+                        <h2 class="feature-title">Residential Landscaping</h2>
+                        <p class="feature-text">
+                            Bespoke landscaping services for private homes, including garden makeovers, hardscaping, and outdoor kitchens.
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="assets/img/service6.png" alt="Feature 6" class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- Block 2: Image on left, Content on right -->
+                <div class="row align-items-center ser-mar">
+                    <div class="col-md-1">
+                    
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img src="assets/img/service7.png" alt="Feature 7" class="img-fluid">
+                    </div>
+                    <div class="col-md-5 order-md-2 service-pad1">
+                        <h2 class="feature-title">Seasonal Planting and Maintenance</h2>
+                        <p class="feature-text">
+                            Regular maintenance services including pruning, fertilization, and pest control.
+                        </p>
+                    </div>
+                </div>
+
+              
             </div>
+            
+
+        </div>
+        
+        
+          
+    </section>
+   
+    
+    <section class="sec">
+        <div class="sec-image-wrapper">
+            <img src="assets/img/960f37609c79d98cd809a8a600c44fdd (1).jpeg" class="sec-image" alt="Background Image">
+        </div>
+        <div class="sec-content">
+            <h1 class="sec-title">We're ready to start.</h1>
+            <p class="sec-text">Let's Build Something Beautiful</p>
+            <a href="#" class="btn btn-primary sec-btn" data-bs-toggle="modal" data-bs-target="#scheduleCallModal">
+                Schedule a call
+            </a>
         </div>
     </section>
     <div class="modal fade py-4" id="scheduleCallModal" tabindex="-1" aria-labelledby="scheduleCallModalLabel" aria-hidden="true">
@@ -222,16 +234,12 @@
                 <div class="modal-body">
                     <p>Connect with our experts to kickstart your dream outdoor project.</p>
                     <form id="scheduleCallForm">
-                        <div class="">
+                        <div class="form-row">
                             <!-- Name -->
                             <div class="form-group">
                                 <label for="name">Name</label>
                                 <input type="text" class="form-control" id="callName" placeholder="Write your name" required>
                                 
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" placeholder="Write your phone number" required>
                             </div>
                             <!-- Email -->
                             <div class="form-group">
@@ -239,10 +247,28 @@
                                 <input type="email" id="email" name="email" placeholder="Write your email address" required>
                             </div>
                         </div>
-                        
+                        <div class="form-row">
+                            <!-- Phone Number -->
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Write your phone number" required>
+                            </div>
+                            <!-- Address -->
+                            <div class="form-group">
+                                <label for="callProject">What you’re looking for</label>
+                                <select id="callProject" class="form" required>
+                                    <option value="" selected class="form">Select an option</option>
+                                    <option value="residential" class="form">Residential Landscaping</option>
+                                    <option value="commercial" class="form">Commercial Landscaping</option>
+                                    <option value="maintenance" class="form">Garden Maintenance</option>
+                                    <option value="stonework" class="form">Stonework & Design</option>
+                                    <option value="other" class="form">Other</option>
+                                </select>
+                            </div>
+                        </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-primary spotlight-btn" data-bs-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-primary spotlight-btn">Enquire Now</button>
+                            <button type="button" class="btn btn-primary spotlight-btn">Schedule a call</button>
                         </div>
                         
 
@@ -252,6 +278,8 @@
             </div>
         </div>
     </div>
+      
+    <!-- Vector Image -->
     <footer class="footer">
         <div class="container ">
             <div class="row">
@@ -340,6 +368,15 @@
             </div>
         </div>
     </footer>
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- jQuery & Owl Carousel JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+   
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- JavaScript for Sidebar -->
@@ -369,35 +406,6 @@
         });
 
     </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const slider = document.getElementById("priceSlider");
-            const display = document.getElementById("priceDisplay");
-          
-            // Function to update slider background and display text
-            function updateSlider() {
-              let value = slider.value;
-              let min = slider.min ? slider.min : 0;
-              let max = slider.max ? slider.max : 100;
-              let percentage = ((value - min) * 100) / (max - min);
-              
-              // Update the slider background: fill from left up to the thumb with #003F2E
-              slider.style.background = `linear-gradient(to right, #003F2E 0%, #003F2E ${percentage}%, #ddd ${percentage}%, #ddd 100%)`;
-              
-              // Update displayed price range text
-              display.innerText = `₹0 - ₹${value}`;
-            }
-          
-            // Update on input
-            slider.addEventListener("input", updateSlider);
-          
-            // Trigger the update on page load
-            updateSlider();
-          });
-          
-          
-    </script>
-
 
 </body>
 </html>

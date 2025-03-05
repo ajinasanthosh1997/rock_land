@@ -253,10 +253,51 @@
   .product-header .sort-by select {
     max-width: 100px;
 }
+
+.features-section {
+  background: #f8f9fa;
+}
+
+.feature-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #003F2E; /* Darker green */
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.ser-mar{
+  margin-bottom: 1rem;
+}
+.feature-text {
+  /* font-size: 1rem; */
+  color: #003F2E;
+  text-align: left;
+
+}
+
+/* Ensure images have rounded corners if desired */
+.features-section img {
+  border-radius: 0.5rem;
+}
+.service-pad{
+  padding: 0rem 4rem;
+}
+.service-pad1{
+  padding:2rem;
+}
+
   
   
   /* ------------------ Responsive Adjustments ------------------ */
   @media (max-width: 768px) {
+    .spotlight1 {
+      
+      padding-bottom: 1rem;
+  }
+    .service-pad1 {
+      padding: 1rem;
+  }
     /* Stack filter section on top */
     .filter-section {
       margin-bottom: 1.5rem;

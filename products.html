@@ -37,7 +37,7 @@
         <a class="navbar-brand" href="#"><img src="assets/img/20240406_172737 2.png" class="nav-img" alt=""></a>
         <a class="sidenav-link" href="index.html">Home</a>
         <a class="sidenav-link" href="about.html">About</a>
-        <a class="sidenav-link" href="#">Service</a>
+        <a class="sidenav-link" href="service.html">Service</a>
         <a class="sidenav-link" href="products.html">Products</a>
         <a class="sidenav-link" href="portfolio.html">Portfolio</a>
         <a class="sidenav-link" href="contact.html">Contact</a>
@@ -64,7 +64,7 @@
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
+                            <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
                             <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
                             <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -96,7 +96,7 @@
         <div class="container">
             <div class="row">
                 <!-- Left Filter Section -->
-                <div class="col-lg-3 ">
+                <div class="col-lg-3 d-none d-lg-block">
                     <div class="filter-section">
                         <h4>Category</h4>
                         <form id="filterForm">
@@ -195,11 +195,130 @@
                         </div>
                     </div>
                 </div>
+                <!-- Mobile Filter Toggle Button (Visible on Mobile Only) -->
+                
+                
+                <!-- Offcanvas Mobile Filter Sidebar -->
+                <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="mobileFilterSidebar" aria-labelledby="mobileFilterSidebarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="mobileFilterSidebarLabel">Filter</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="filter-section">
+                            <h4>Category</h4>
+                            <form id="filterForm">
+                            <!-- Collapsible Category: Paving Stone -->
+                            <div class="category-item mb-3 d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" id="catPaving">
+                                <button type="button" class="category-toggle btn d-flex justify-content-between w-100 p-0 text-start" data-bs-toggle="collapse" data-bs-target="#pavingSub" aria-expanded="false">
+                                    <span>Paving stone</span>
+                                    <span>+</span>
+                                </button>
+                            </div>
+                            <div id="pavingSub" class="collapse subcategory-list ps-2">
+                                <div class="subcategory-item">Natural</div>
+                                <div class="subcategory-item">Artificial</div>
+                            </div>
+                            
+                            <!-- Pebbles -->
+                            <div class="category-item mb-3 d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" id="catPebbles">
+                                <button type="button" class="category-toggle btn d-flex justify-content-between w-100 p-0 text-start" data-bs-toggle="collapse" data-bs-target="#pebblesSub" aria-expanded="false">
+                                    <span>Pebbles</span>
+                                    <span>+</span>
+                                </button>
+                            </div>
+                            <div id="pebblesSub" class="collapse subcategory-list ps-2">
+                                <div class="subcategory-item">Natural</div>
+                                <div class="subcategory-item">Artificial</div>
+                            </div>
+                            
+                            <!-- Grass -->
+                            <div class="category-item mb-3 d-flex">
+                                <input class="form-check-input me-2" type="checkbox" id="catGrass">
+                                <button type="button" class="category-toggle btn d-flex justify-content-between w-100 p-0 text-start" data-bs-toggle="collapse" data-bs-target="#grassSub" aria-expanded="false">
+                                    <span>Grass</span>
+                                    <span>+</span>
+                                </button>
+                            </div>
+                            <div id="grassSub" class="collapse subcategory-list ps-2">
+                                <div class="subcategory-item">Natural</div>
+                                <div class="subcategory-item">Artificial</div>
+                            </div>
+                            
+                            <!-- Wall Cladding (No subcategories) -->
+                            <div class="category-item mb-3 d-flex">
+                                <input class="form-check-input me-2" type="checkbox" id="catWallCladding">
+                                <label class="cat form-check-label w-100 d-flex justify-content-between" for="catWallCladding">
+                                    <span>Wall cladding</span>
+                                </label>
+                            </div>
+                            
+                            <!-- Plants -->
+                            <div class="category-item mb-3 d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" id="catPlants">
+                                <button type="button" class="category-toggle btn d-flex justify-content-between w-100 p-0 text-start" data-bs-toggle="collapse" data-bs-target="#plantsSub" aria-expanded="false">
+                                    <span>Plants</span>
+                                    <span>+</span>
+                                </button>
+                            </div>
+                            <div id="plantsSub" class="collapse subcategory-list ps-2">
+                                <div class="subcategory-item">Natural</div>
+                                <div class="subcategory-item">Artificial</div>
+                            </div>
+                            
+                            <!-- Pots -->
+                            <div class="category-item mb-3 d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" id="catPots">
+                                <label class="cat form-check-label w-100 d-flex justify-content-between" for="catPots">
+                                    <span>Pots</span>
+                                </label>
+                            </div>
+                            
+                            <!-- Carpets -->
+                            <div class="category-item mb-3 d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" id="catCarpets">
+                                <label class="cat form-check-label w-100 d-flex justify-content-between" for="catCarpets">
+                                    <span>Carpets</span>
+                                </label>
+                            </div>
+                            
+                            <!-- Curtains -->
+                            <div class="category-item mb-3 d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" id="catCurtains">
+                                <label class="cat form-check-label w-100 d-flex justify-content-between" for="catCurtains">
+                                    <span>Curtains</span>
+                                </label>
+                            </div>
+                            </form>
+                            
+                            <hr>
+                            
+                            <h4>Filter by price</h4>
+                            <div class="price-filter">
+                                <div id="priceDisplay">₹0 - ₹1000</div>
+                                <input type="range" id="priceSlider" min="0" max="4000" step="100" value="1000">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  
                   
     
                 <!-- Right Product Display Section -->
                 <div class="col-lg-9 prod-pad">
-                    <div class="product-header d-flex justify-content-between align-items-center mb-4">
+                    <div class="mobile-product-header d-flex d-lg-none justify-content-between align-items-center mb-4">
+                        <div class="search-box w-75">
+                            <input type="text" class="form-control" placeholder="Search products...">
+                        </div>
+                        <div class="mobile-filter-toggle d-lg-none text-end">
+                            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileFilterSidebar" aria-controls="mobileFilterSidebar">
+                            <i class="fa fa-filter"></i> Filter
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-header d-none d-lg-flex justify-content-between align-items-center mb-4">
                         <div class="results">
                             <p class="mb-0">Showing 1 - 15 of 25 results</p>
                         </div>
@@ -575,7 +694,7 @@
                     <ul class="footer-nav">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="#">Services</a></li>
+                        <li><a href="service.html">Services</a></li>
                         <li><a href="products.html">Products</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
                         <li><a href="contact.html">Contact</a></li>
