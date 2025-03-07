@@ -378,12 +378,29 @@
 .product-card.hidden {
   display: none;
 }
+.hidden {
+  display: none;
+}
+.see-more-btn{
+  color: #003F2E;
+
+}
+
 
 
   
   
   /* ------------------ Responsive Adjustments ------------------ */
   @media (max-width: 768px) {
+    .product-name {
+      font-size: .8rem;
+      color: #003F2E;
+      margin-bottom: 0.5rem;
+  }
+  .product-price {
+    font-size: .8rem;
+    color: #003F2E;
+}
     .spotlight1 {
       
       padding-bottom: 1rem;
