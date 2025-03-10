@@ -70,6 +70,35 @@ body {
     font-size: 11px;
     color: #666;
   }
+  .admin-link {
+    color: #003F2E;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .admin-link span {
+    text-align: right;
+    line-height: 1;
+  }
+  
+  .admin-link small {
+    display: block;
+    font-size: 11px;
+    color: #666;
+  }
+  
+  /* Style the chevron icon with a circular border/background */
+  .admin-link i {
+    background: #fff;                /* White background */
+    border: 1px solid #003F2E;         /* Border with green color */
+    border-radius: 50%;              /* Makes it circular */
+    padding: 4px;                    /* Adjust padding as needed */
+    font-size: 8px;                 /* Adjust icon size if needed */
+    margin-left: 0.5rem;             /* Space between text and icon */
+  }
+  
   /* Sidebar styling */
   .sidebar {
     width: 250px;

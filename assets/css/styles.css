@@ -196,9 +196,12 @@ body {
 }
 
 .nav-img {
-    width: 7.5rem;
+    width: 12.5rem;
 }
 
+.nav-img1 {
+    width: 7.5rem;
+}
 /* Header container */
 .header-container {
     position: relative;
