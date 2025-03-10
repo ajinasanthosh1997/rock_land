@@ -26,6 +26,7 @@ body {
   .logo img {
     max-height: 40px;
     padding: 0.5rem;
+    padding-right: 6rem;
   }
   .hamburger {
     font-size: 1.5rem;
@@ -33,16 +34,33 @@ body {
     margin: 0 1rem;
   }
   .search-box {
-    /* Adjust width as needed */
+    position: relative;
   }
+  
+  .search-box .search-icon {
+    position: absolute;
+    top: 55%;
+    left: 10px;       /* Adjust as needed */
+    transform: translateY(-50%);
+    color: #D5D5D5;   /* Desired color */
+    font-size: 14px;  /* Adjust size as needed */
+    pointer-events: none; /* So clicks go to the input */
+  }
+  
+  .search-box input {
+    padding-left: 36px;  /* Ensure text doesn't overlap the icon */
+  }
+  
+  
   .search-box input {
     margin-top: 0.2rem;
     font-size: 12px;
     color: #202224;
     width: 25rem;
+    background-color:#F5F6EF;
     border: 0.5px solid #D5D5D5;
     border-radius: 20px;
-    padding: 0.3rem 1rem;
+    /* padding: 0.3rem 1rem; */
   }
   /* Admin dropdown styling */
   .admin-info {
@@ -71,7 +89,7 @@ body {
     color: #666;
   }
   .admin-link {
-    color: #003F2E;
+    color: black;
     text-decoration: none;
     font-size: 14px;
     display: flex;
@@ -92,12 +110,21 @@ body {
   /* Style the chevron icon with a circular border/background */
   .admin-link i {
     background: #fff;                /* White background */
-    border: 1px solid #003F2E;         /* Border with green color */
+    border: 1px solid black;         /* Border with green color */
     border-radius: 50%;              /* Makes it circular */
     padding: 4px;                    /* Adjust padding as needed */
     font-size: 8px;                 /* Adjust icon size if needed */
     margin-left: 0.5rem;             /* Space between text and icon */
   }
+
+  .admin-link .p1 {
+    text-align: left;
+  }
+  .dropdown-item {
+    text-align: left;
+    font-size: .8rem;
+  }
+  
   
   /* Sidebar styling */
   .sidebar {
@@ -193,7 +220,209 @@ body {
     font-size: 1rem;
     color: #003F2E;
   }
-  
+  .pp{
+    font-size: .8rem;
+  }
+  .p1{
+    font-size: .8rem;
+    /* padding: .5rem; */
+    text-align: left;
+    padding-right: 1rem;
+    font-weight: bold;
+  }
+  .p2{
+    
+    font-weight: 100;
+  }
+
+  .pending-orders-table {
+    border-radius: 15px;
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0 2px;
+    
+  }
+  .pending-orders-table th{
+    font-size: .8rem;
+    padding: .5rem .8rem;
+    font-weight: bolder;
+  }
+  .pending-orders-table td{
+    font-size: .7rem;
+    padding: 1.5rem .5rem;
+  }
+
+  .pending-orders-table th,
+  .pending-orders-table td {
+    vertical-align: middle;
+    /* Remove default borders if any */
+    border: none;
+  }
+  .note{
+    padding-right: 2rem !important;
+  }
+  .product-name-img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .product-name-img img {
+    max-width: 40px;
+    border-radius: 5px;
+  }
+  /* Status dropdown: style default option (pending) */
+  /* Default style for the dropdown */
+.status-dropdown {
+  width:65%;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* padding: 0.25rem .8rem; */
+  border-radius: 4px;
+  font-size: 0.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #FFFFFF; /* Default background */
+  color: #000000; /* Default text color */
+}
+
+/* Style for Pending status */
+.status-dropdown.pending {
+  background-color: #FFEBEE; /* Light red background */
+  color: #D32F2F; /* Dark red text */
+}
+
+/* Style for Approved status */
+.status-dropdown.approved {
+  background-color: #E8F5E9; /* Light green background */
+  color: #2E7D32; /* Dark green text */
+}
+
+/* Style for Completed status */
+.status-dropdown.completed {
+  background-color: #E3F2FD; /* Light blue background */
+  color: #1565C0; /* Dark blue text */
+}
+/* Style for the note cell */
+/* Style for the note cell */
+.note {
+  border: 1px solid #D5D5D5; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 0.5rem; /* Add padding inside the note cell */
+  width: 150px; /* Fixed width */
+  height: 5rem; /* Fixed height */
+  cursor: text; /* Change cursor to text when hovering */
+  position: relative; /* For placeholder positioning */
+  overflow: auto; /* Add scrollbar if content overflows */
+  resize: none; /* Prevent resizing (if using textarea) */
+  font-size: 0.8rem; /* Adjust font size */
+  line-height: 1.4; /* Improve readability */
+  box-sizing: border-box; /* Ensure padding is included in width/height */
+}
+
+/* Placeholder styling for empty note cells */
+.note[data-placeholder]:empty::before {
+  content: attr(data-placeholder); /* Display the placeholder text */
+  color: #999; /* Light gray color for placeholder */
+  font-style: italic; /* Italicize placeholder text */
+}
+
+/* Style for the note cell when focused */
+.note:focus {
+  outline: none; /* Remove default outline */
+  border-color: #003F2E; /* Change border color when focused */
+  box-shadow: 0 0 0 2px rgba(0, 63, 46, 0.1); /* Add a subtle shadow */
+}
+/* Table Styling */
+.dashboard-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px; /* Add space between rows */
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.dashboard-table th {
+
+  font-weight: 600;
+}
+
+.dashboard-table tbody tr {
+  background-color: #f8f9fa; /* Light gray background for rows */
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-table tbody tr:hover {
+  background-color: #e9ecef; /* Slightly darker gray on hover */
+}
+
+/* Add Category Button */
+.btn-add-category {
+  background-color: #BCFF83; /* Green background */
+ 
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-add-category:hover {
+  background-color: #BCFF83; /* Darker green on hover */
+}
+
+.btn-add-category i {
+  margin-right: 5px;
+}
+
+/* Status Badges */
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.status-active {
+  background-color: #d4edda; /* Light green background */
+  color: #155724; /* Dark green text */
+}
+
+.status-inactive {
+  background-color: #f8d7da; /* Light red background */
+  color: #721c24; /* Dark red text */
+}
+
+/* Action Buttons */
+.btn-action {
+  background-color: transparent;
+  border: none;
+  color: #003F2E; /* Dark green text */
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.btn-action:hover {
+  color: #28a745; /* Green text on hover */
+}
+
+.btn-action i {
+  margin-right: 5px;
+}
   @media (max-width: 992px) {
     .sidebar {
       left: -250px;
