@@ -76,17 +76,78 @@
 
   <!-- Main Content -->
   <main class="content">
-    <div class="container-fluid d-flex justify-content-between align-items-center mb-4">
-      <h3>New Products</h3>
-      <button class="btn btn-add-category py-2 px-4 text1">
-        Save
-      </button>
-      
+    <div class="container-fluid">
+        <!-- Heading and Save Button -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3>New Products</h3>
+            <button class="btn btn-add-category py-2 px-4 text1">Save</button>
+        </div>
+
+        <!-- New Product Form -->
+        <form id="new-product-form" class="new-product-container d-flex">
+            <!-- Left Side: Image Upload -->
+            <!-- Image Upload Section -->
+            <div class="image-upload">
+              <label for="upload-image" id="upload-box" class="upload-box">
+                  <img id="preview-img" src="" alt="Preview Image" style="display: none;">
+                  <i class="fas fa-plus"></i>
+                  <input type="file" id="upload-image" accept="image/*" onchange="previewImage(event)">
+              </label>
+            </div>
+          
+            
+
+            <!-- Right Side: Product Details Form -->
+            <div class="product-details">
+                <div class="form-group">
+                    <label>Product Name</label>
+                    <input type="text" class="form-control" placeholder="Enter product name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Category</label>
+                    <select class="form-select" required>
+                        <option>Paving stone</option>
+                        <option>Plants</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Sub-Category</label>
+                    <select class="form-select" required>
+                        <option>Natural</option>
+                        <option>Artificial</option>
+                    </select>
+                </div>
+                
+                <div class="form-row d-flex">
+                    <div class="form-group half-width">
+                        <label>Pricing</label>
+                        <input type="text" class="form-control" placeholder="₹100" required>
+                    </div>
+
+                    <div class="form-group half-width">
+                        <label>Unit</label>
+                        <select class="form-select" required>
+                            <option>Kg</option>
+                            <option>Scoop</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <!-- Add Product Button -->
+        <div class="mt-3 text-center">
+          <button type="button" class="btn btn-new-product" id="add-product-btn">
+              <i class="fas fa-plus"></i> Add Product
+          </button>
+        </div>
+
 
     </div>
-   
-    
-  </main>
+</main>
+
   
 
 
@@ -157,6 +218,76 @@
       });
     });
   </script>
+  <!-- <script>
+    function previewImage(event) {
+    const input = event.target;
+    const previewImg = document.getElementById("preview-img");
+    const plusIcon = document.querySelector(".upload-box i");
+
+    if (input.files && input.files[0]) {
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+            previewImg.src = e.target.result;
+            previewImg.style.display = "block"; // Show the image
+            plusIcon.style.display = "none"; // Hide the plus icon
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+
+  </script> -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const addProductBtn = document.getElementById("add-product-btn");
+    const formContainer = document.querySelector(".container-fluid"); // Parent container
+    const productForm = document.getElementById("new-product-form"); // Original form
+
+    addProductBtn.addEventListener("click", function () {
+        // Clone the existing product form
+        const newForm = productForm.cloneNode(true);
+        
+        // Clear input values in cloned form
+        newForm.querySelectorAll("input").forEach(input => input.value = "");
+        newForm.querySelectorAll("select").forEach(select => select.selectedIndex = 0);
+        
+        // Ensure the image upload section resets
+        const previewImg = newForm.querySelector("#preview-img");
+        if (previewImg) {
+            previewImg.src = "";
+            previewImg.style.display = "none"; // Hide previous image preview
+            newForm.querySelector(".upload-box i").style.display = "block"; // Show plus icon
+        }
+
+        // Create a wrapper div for form and save button
+        const formWrapper = document.createElement("div");
+        formWrapper.classList.add("product-form-wrapper");
+
+        // Create Save button separately
+        const saveButton = document.createElement("button");
+        saveButton.type = "button";
+        saveButton.className = "btn btn-add-category py-2 px-4 text1 mt-3";
+        saveButton.textContent = "Save";
+
+        // Append form and save button separately
+        formWrapper.appendChild(newForm);  // Append form inside wrapper
+        formWrapper.appendChild(saveButton); // Append save button outside the form
+
+        // Append the wrapper above the Add Product button
+        formContainer.insertBefore(formWrapper, addProductBtn.parentElement);
+
+        // Add event listener for Save button (this is just for UI; replace with actual saving logic)
+        saveButton.addEventListener("click", function () {
+            alert("Product Saved!");
+        });
+    });
+});
+
+    </script>
+    
+    
 </body>
 
 </html>
